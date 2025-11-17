@@ -1,0 +1,183 @@
+PODS:
+  - Alamofire (5.6.1)
+  - AlicloudHTTPDNS (2.0.6):
+    - AlicloudSender
+    - AlicloudUT
+    - AlicloudUtils
+  - AlicloudSender (1.0.0.3):
+    - AlicloudUTDID
+    - EMASRest
+  - AlicloudUT (5.2.0.16):
+    - AlicloudUTDID
+  - AlicloudUTDID (1.5.0.94)
+  - AlicloudUtils (1.3.9):
+    - AlicloudUTDID
+  - CocoaAsyncSocket (7.6.5)
+  - CryptoSwift (1.5.1)
+  - DinCore/DinLiveStreaming (0.0.5):
+    - AlicloudHTTPDNS (= 2.0.6)
+    - CocoaAsyncSocket (= 7.6.5)
+    - DinCore/Shared
+    - DinSupport
+    - HandyJSON (= 5.0.2)
+    - Moya (= 15.0.0)
+    - Objective-LevelDB (= 2.1.5)
+    - Qiniu (>= 8.4.4)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - Snappy (= 1.1.0)
+    - Starscream (= 3.1.1)
+    - YYModel (= 1.0.4)
+  - DinCore/DinPanel (0.0.5):
+    - AlicloudHTTPDNS (= 2.0.6)
+    - CocoaAsyncSocket (= 7.6.5)
+    - DinCore/Shared
+    - DinSupport
+    - HandyJSON (= 5.0.2)
+    - Moya (= 15.0.0)
+    - Objective-LevelDB (= 2.1.5)
+    - Qiniu (>= 8.4.4)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - Snappy (= 1.1.0)
+    - Starscream (= 3.1.1)
+    - YYModel (= 1.0.4)
+  - DinCore/DinStorageBattery (0.0.5):
+    - AlicloudHTTPDNS (= 2.0.6)
+    - CocoaAsyncSocket (= 7.6.5)
+    - DinCore/Shared
+    - DinSupport
+    - HandyJSON (= 5.0.2)
+    - Moya (= 15.0.0)
+    - Objective-LevelDB (= 2.1.5)
+    - Qiniu (>= 8.4.4)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - Snappy (= 1.1.0)
+    - Starscream (= 3.1.1)
+    - YYModel (= 1.0.4)
+  - DinCore/Shared (0.0.5):
+    - AlicloudHTTPDNS (= 2.0.6)
+    - CocoaAsyncSocket (= 7.6.5)
+    - DinSupport
+    - HandyJSON (= 5.0.2)
+    - Moya (= 15.0.0)
+    - Objective-LevelDB (= 2.1.5)
+    - Qiniu (>= 8.4.4)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - Snappy (= 1.1.0)
+    - Starscream (= 3.1.1)
+    - YYModel (= 1.0.4)
+  - DinSupport (0.0.1):
+    - CocoaAsyncSocket (= 7.6.5)
+    - CryptoSwift
+    - SSZipArchive (= 2.4.3)
+    - ZYGCDTimer (= 1.0.0)
+  - EMASRest (11.1.1.2)
+  - HandyJSON (5.0.2)
+  - HappyDNS (1.0.2)
+  - leveldb-library (1.18.3)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Objective-LevelDB (2.1.5):
+    - leveldb-library (~> 1.18.2)
+  - Qiniu (8.4.4):
+    - HappyDNS (~> 1.0.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - Snappy (1.1.0)
+  - SSZipArchive (2.4.3)
+  - Starscream (3.1.1)
+  - YYModel (1.0.4)
+  - ZYGCDTimer (1.0.0)
+
+DEPENDENCIES:
+  - AlicloudHTTPDNS (= 2.0.6)
+  - CocoaAsyncSocket
+  - CryptoSwift
+  - DinCore/DinLiveStreaming (from `../../`)
+  - DinCore/DinPanel (from `../../`)
+  - DinCore/DinStorageBattery (from `../../`)
+  - DinSupport (from `../../../DinSupport/`)
+  - HandyJSON
+  - Moya
+  - Objective-LevelDB
+  - Qiniu
+  - RxCocoa
+  - RxSwift
+  - Snappy
+  - SSZipArchive
+  - Starscream (= 3.1.1)
+  - YYModel
+  - ZYGCDTimer
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - AlicloudHTTPDNS
+    - AlicloudSender
+    - AlicloudUT
+    - AlicloudUTDID
+    - AlicloudUtils
+    - EMASRest
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CocoaAsyncSocket
+    - CryptoSwift
+    - HandyJSON
+    - HappyDNS
+    - leveldb-library
+    - Moya
+    - Objective-LevelDB
+    - Qiniu
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Snappy
+    - SSZipArchive
+    - Starscream
+    - YYModel
+    - ZYGCDTimer
+
+EXTERNAL SOURCES:
+  DinCore:
+    :path: "../../"
+  DinSupport:
+    :path: "../../../DinSupport/"
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  AlicloudHTTPDNS: dc4afab7d253894e8efa8e5cfc1760ad09439d81
+  AlicloudSender: 1f468b6bd962a099ffc19d45e3608b0fe98f259d
+  AlicloudUT: 6d1cf30d57d096b7e9bb4b069dd0ba6ad59a3338
+  AlicloudUTDID: 7323c443dcdf9a73e2224dc6ce51703671d7a765
+  AlicloudUtils: 66e0ba6ece62d7dd05e9dd95674b2c7811624c2f
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
+  DinCore: 83724d42debb877834f14023b12dd544cb193810
+  DinSupport: 57854771f1a95bd336ac0ff7fd004e7f5e6d549a
+  EMASRest: 8df6f87836767a9415ad5cc4af739bc9d215b475
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  HappyDNS: 75eed16b27c6c3abccea34ac349ab7b7e954b25b
+  leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Objective-LevelDB: fa075efd9d0be645aee51847cc3ee70cdadb80ce
+  Qiniu: 60ba88dadb712bcf1fb2d5e50c037b073ab7df2a
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Snappy: 71c4c712897e64187c9b00dd32f2c0108980cc45
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  ZYGCDTimer: 12629306940bd8edc456568478213a9f21abfe2d
+
+PODFILE CHECKSUM: a01ecd1a87f73102bdae8b1ec7e2ccca30a0ce16
+
+COCOAPODS: 1.13.0

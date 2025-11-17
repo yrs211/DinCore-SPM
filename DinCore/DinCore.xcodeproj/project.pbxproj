@@ -1,0 +1,1777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D9D0D852E27E4B6008469B5 /* DinR2UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D0D842E27E49A008469B5 /* DinR2UploadRequest.swift */; };
+		0D9D0D882E27E80E008469B5 /* DinR2FileForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D0D872E27E806008469B5 /* DinR2FileForm.swift */; };
+		0D9D0D8A2E27EE4E008469B5 /* DinR2UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D0D892E27EE46008469B5 /* DinR2UploadManager.swift */; };
+		759D65BF2A36CD050073158A /* DinCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 759D65BE2A36CD050073158A /* DinCore.docc */; };
+		759D65C52A36CD050073158A /* DinCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759D65BA2A36CD050073158A /* DinCore.framework */; };
+		759D65CA2A36CD050073158A /* DinCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65C92A36CD050073158A /* DinCoreTests.swift */; };
+		759D65CB2A36CD050073158A /* DinCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 759D65BD2A36CD050073158A /* DinCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		759D66E32A36CDE40073158A /* DinDataManager+Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65D62A36CDE30073158A /* DinDataManager+Domain.swift */; };
+		759D66E42A36CDE40073158A /* DinDataManager+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65D72A36CDE30073158A /* DinDataManager+User.swift */; };
+		759D66E52A36CDE40073158A /* DinDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65D82A36CDE30073158A /* DinDataManager.swift */; };
+		759D66E62A36CDE40073158A /* DinScannedBLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65DA2A36CDE30073158A /* DinScannedBLEPeripheral.swift */; };
+		759D66E82A36CDE40073158A /* DinBLEPeripheralIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65DC2A36CDE30073158A /* DinBLEPeripheralIdentifiable.swift */; };
+		759D66E92A36CDE40073158A /* DinBLEPeripheralScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65DD2A36CDE30073158A /* DinBLEPeripheralScanner.swift */; };
+		759D66EA2A36CDE40073158A /* DinNovaPanelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E02A36CDE30073158A /* DinNovaPanelControl.swift */; };
+		759D66EB2A36CDE40073158A /* DinNovaPanelEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E12A36CDE30073158A /* DinNovaPanelEventHandler.swift */; };
+		759D66EC2A36CDE40073158A /* DinNovaPanelControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E32A36CDE30073158A /* DinNovaPanelControl+WSResponseHandler.swift */; };
+		759D66ED2A36CDE40073158A /* DinWebsocketControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E42A36CDE30073158A /* DinWebsocketControl.swift */; };
+		759D66EE2A36CDE40073158A /* DinNovaPanelSocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E52A36CDE30073158A /* DinNovaPanelSocketResponse.swift */; };
+		759D66EF2A36CDE40073158A /* DinNovaPanelControl+OtherWSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E62A36CDE30073158A /* DinNovaPanelControl+OtherWSResponseHandler.swift */; };
+		759D66F02A36CDE40073158A /* DinNovaPanelControl+WSOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E72A36CDE30073158A /* DinNovaPanelControl+WSOperation.swift */; };
+		759D66F12A36CDE40073158A /* DinLearnModeWebSocketControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E82A36CDE30073158A /* DinLearnModeWebSocketControl.swift */; };
+		759D66F22A36CDE40073158A /* DinNovaPanelControl+InfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65E92A36CDE30073158A /* DinNovaPanelControl+InfoKey.swift */; };
+		759D66F32A36CDE40073158A /* DinNovaPanelQueueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65EA2A36CDE30073158A /* DinNovaPanelQueueName.swift */; };
+		759D66F42A36CDE40073158A /* DinNovaPanelControl+HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65EC2A36CDE30073158A /* DinNovaPanelControl+HTTPResponseHandler.swift */; };
+		759D66F52A36CDE40073158A /* DinNovaPanelControl+HTTPOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65ED2A36CDE30073158A /* DinNovaPanelControl+HTTPOperation.swift */; };
+		759D66F62A36CDE40073158A /* DinNovaWidgetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65EF2A36CDE30073158A /* DinNovaWidgetRequest.swift */; };
+		759D66F72A36CDE40073158A /* DinNovaWidgetRequest+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F02A36CDE30073158A /* DinNovaWidgetRequest+Parameters.swift */; };
+		759D66F82A36CDE40073158A /* DinNovaPluginOperationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F12A36CDE30073158A /* DinNovaPluginOperationRequest.swift */; };
+		759D66F92A36CDE40073158A /* DinNovaPanelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F22A36CDE30073158A /* DinNovaPanelRequest.swift */; };
+		759D66FA2A36CDE40073158A /* DinNovaPluginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F32A36CDE30073158A /* DinNovaPluginRequest.swift */; };
+		759D66FB2A36CDE40073158A /* DinNovaPanelOperationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F42A36CDE30073158A /* DinNovaPanelOperationRequest.swift */; };
+		759D66FC2A36CDE40073158A /* DinNovaPanelControl+InfoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F52A36CDE30073158A /* DinNovaPanelControl+InfoHandler.swift */; };
+		759D66FD2A36CDE40073158A /* DinNovaPanelOperationInfoHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F62A36CDE30073158A /* DinNovaPanelOperationInfoHolder.swift */; };
+		759D66FE2A36CDE40073158A /* DinNovaPanelLANUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65F82A36CDE30073158A /* DinNovaPanelLANUtil.swift */; };
+		759D66FF2A36CDE40073158A /* DinDoorWindowSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65FA2A36CDE30073158A /* DinDoorWindowSensor.swift */; };
+		759D67002A36CDE40073158A /* DinNovaPanelPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65FB2A36CDE30073158A /* DinNovaPanelPing.swift */; };
+		759D67012A36CDE40073158A /* DinNovaPanelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65FD2A36CDE30073158A /* DinNovaPanelManager.swift */; };
+		759D67022A36CDE40073158A /* DinNovaPanelManager+PluginResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65FE2A36CDE30073158A /* DinNovaPanelManager+PluginResponseHandler.swift */; };
+		759D67032A36CDE40073158A /* DinNovaPanelManager+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D65FF2A36CDE30073158A /* DinNovaPanelManager+Plugin.swift */; };
+		759D67042A36CDE40073158A /* DinDeviceTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66002A36CDE30073158A /* DinDeviceTokenModel.swift */; };
+		759D67052A36CDE40073158A /* DinCareModeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66012A36CDE30073158A /* DinCareModeStatus.swift */; };
+		759D67062A36CDE40073158A /* DinNovaPanelSOSOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66032A36CDE30073158A /* DinNovaPanelSOSOperationResult.swift */; };
+		759D67072A36CDE40073158A /* DinNovaPanelArmOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66042A36CDE30073158A /* DinNovaPanelArmOperationResult.swift */; };
+		759D67082A36CDE40073158A /* DinSmartPlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66052A36CDE30073158A /* DinSmartPlug.swift */; };
+		759D67092A36CDE40073158A /* DinNovaPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66062A36CDE30073158A /* DinNovaPanel.swift */; };
+		759D670A2A36CDE40073158A /* DinNovaPanelEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66072A36CDE30073158A /* DinNovaPanelEvent.swift */; };
+		759D670B2A36CDE40073158A /* DinNovaPanelOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66092A36CDE30073158A /* DinNovaPanelOperator.swift */; };
+		759D670C2A36CDE40073158A /* DinNovaPanelOperator+ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D660A2A36CDE30073158A /* DinNovaPanelOperator+ResponseHandler.swift */; };
+		759D670D2A36CDE40073158A /* DinNovaPanelOperator+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D660B2A36CDE30073158A /* DinNovaPanelOperator+Operation.swift */; };
+		759D670E2A36CDE40073158A /* DinNovaSirenControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D660F2A36CDE30073158A /* DinNovaSirenControl+Operation.swift */; };
+		759D670F2A36CDE40073158A /* DinNovaSiren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66102A36CDE30073158A /* DinNovaSiren.swift */; };
+		759D67102A36CDE40073158A /* DinNovaSirenControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66112A36CDE30073158A /* DinNovaSirenControl+WSResponseHandler.swift */; };
+		759D67112A36CDE40073158A /* DinNovaSirenControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66122A36CDE30073158A /* DinNovaSirenControl.swift */; };
+		759D67122A36CDE40073158A /* DinNovaDoorWindowSensorControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66142A36CDE30073158A /* DinNovaDoorWindowSensorControl+Operation.swift */; };
+		759D67132A36CDE40073158A /* DinNovaDoorWindowSensorControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66152A36CDE30073158A /* DinNovaDoorWindowSensorControl+WSResponseHandler.swift */; };
+		759D67142A36CDE40073158A /* DinNovaDoorWindowSensorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66162A36CDE30073158A /* DinNovaDoorWindowSensorControl.swift */; };
+		759D67152A36CDE40073158A /* DinNovaDoorWindowSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66172A36CDE30073158A /* DinNovaDoorWindowSensor.swift */; };
+		759D67162A36CDE40073158A /* DinNovaPluginOperationInfoHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66182A36CDE30073158A /* DinNovaPluginOperationInfoHolder.swift */; };
+		759D67172A36CDE40073158A /* DinNovaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66192A36CDE30073158A /* DinNovaPlugin.swift */; };
+		759D67182A36CDE40073158A /* DinNovaPluginAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D661A2A36CDE30073158A /* DinNovaPluginAdder.swift */; };
+		759D67192A36CDE40073158A /* DinNovaSmartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D661C2A36CDE30073158A /* DinNovaSmartButton.swift */; };
+		759D671A2A36CDE40073158A /* DinNovaSmartButtonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D661D2A36CDE30073158A /* DinNovaSmartButtonControl.swift */; };
+		759D671B2A36CDE40073158A /* DinNovaSmartButtonControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D661E2A36CDE30073158A /* DinNovaSmartButtonControl+Operation.swift */; };
+		759D671C2A36CDE40073158A /* DinNovaSmartButtonControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D661F2A36CDE30073158A /* DinNovaSmartButtonControl+WSResponseHandler.swift */; };
+		759D671D2A36CDE40073158A /* DinNovaKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66212A36CDE30073158A /* DinNovaKeypad.swift */; };
+		759D671E2A36CDE40073158A /* DinNovaKeypadControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66222A36CDE30073158A /* DinNovaKeypadControl.swift */; };
+		759D671F2A36CDE40073158A /* DinNovaKeypadControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66232A36CDE30073158A /* DinNovaKeypadControl+WSResponseHandler.swift */; };
+		759D67202A36CDE40073158A /* DinNovaKeypadControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66242A36CDE30073158A /* DinNovaKeypadControl+Operation.swift */; };
+		759D67212A36CDE40073158A /* DinNovaPluginControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66252A36CDE30073158A /* DinNovaPluginControl.swift */; };
+		759D67222A36CDE40073158A /* DinNovaPluginControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66262A36CDE30073158A /* DinNovaPluginControl+Operation.swift */; };
+		759D67232A36CDE40073158A /* DinNovaPluginOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66272A36CDE30073158A /* DinNovaPluginOperator.swift */; };
+		759D67242A36CDE40073158A /* DinNovaSecurityAccessoryControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66292A36CDE30073158A /* DinNovaSecurityAccessoryControl+Operation.swift */; };
+		759D67252A36CDE40073158A /* DinNovaSecurityAccessoryControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D662A2A36CDE30073158A /* DinNovaSecurityAccessoryControl.swift */; };
+		759D67262A36CDE40073158A /* DinNovaSecurityAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D662B2A36CDE30073158A /* DinNovaSecurityAccessory.swift */; };
+		759D67272A36CDE40073158A /* DinNovaSecurityAccessoryControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D662C2A36CDE30073158A /* DinNovaSecurityAccessoryControl+WSResponseHandler.swift */; };
+		759D67282A36CDE40073158A /* DinNovaRelayControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D662E2A36CDE30073158A /* DinNovaRelayControl.swift */; };
+		759D67292A36CDE40073158A /* DinNovaRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D662F2A36CDE30073158A /* DinNovaRelay.swift */; };
+		759D672A2A36CDE40073158A /* DinNovaRelayControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66302A36CDE30073158A /* DinNovaRelayControl+Operation.swift */; };
+		759D672B2A36CDE40073158A /* DinNovaRelayControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66312A36CDE30073158A /* DinNovaRelayControl+WSResponseHandler.swift */; };
+		759D672C2A36CDE40073158A /* DinNovaRemoteControlControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66332A36CDE30073158A /* DinNovaRemoteControlControl+Operation.swift */; };
+		759D672D2A36CDE40073158A /* DinNovaRemoteControlControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66342A36CDE30073158A /* DinNovaRemoteControlControl+WSResponseHandler.swift */; };
+		759D672E2A36CDE40073158A /* DinNovaRemoteControlControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66352A36CDE40073158A /* DinNovaRemoteControlControl.swift */; };
+		759D672F2A36CDE40073158A /* DinNovaRemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66362A36CDE40073158A /* DinNovaRemoteControl.swift */; };
+		759D67302A36CDE40073158A /* DinNovaSmartPlugControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66382A36CDE40073158A /* DinNovaSmartPlugControl+WSResponseHandler.swift */; };
+		759D67312A36CDE40073158A /* DinNovaSmartPlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66392A36CDE40073158A /* DinNovaSmartPlug.swift */; };
+		759D67322A36CDE40073158A /* DinNovaSmartPlugControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D663A2A36CDE40073158A /* DinNovaSmartPlugControl.swift */; };
+		759D67332A36CDE40073158A /* DinNovaSmartPlugControl+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D663B2A36CDE40073158A /* DinNovaSmartPlugControl+Operation.swift */; };
+		759D67342A36CDE40073158A /* DinNovaPluginControl+WSResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D663C2A36CDE40073158A /* DinNovaPluginControl+WSResponseHandler.swift */; };
+		759D67352A36CDE40073158A /* DinStorageBatteryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D663E2A36CDE40073158A /* DinStorageBatteryOperator.swift */; };
+		759D67362A36CDE40073158A /* DinStorageBatteryControl+UpdateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D663F2A36CDE40073158A /* DinStorageBatteryControl+UpdateInfo.swift */; };
+		759D67372A36CDE40073158A /* DinStorageBatteryRequest+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66402A36CDE40073158A /* DinStorageBatteryRequest+Parameters.swift */; };
+		759D67382A36CDE40073158A /* DinStorageBatteryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66412A36CDE40073158A /* DinStorageBatteryManager.swift */; };
+		759D67392A36CDE40073158A /* DinStorageBatteryControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66422A36CDE40073158A /* DinStorageBatteryControl.swift */; };
+		759D673A2A36CDE40073158A /* DinStorageBatteryHTTPCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66432A36CDE40073158A /* DinStorageBatteryHTTPCommand.swift */; };
+		759D673B2A36CDE40073158A /* DinStorageBatteryMSCTCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66442A36CDE40073158A /* DinStorageBatteryMSCTCommand.swift */; };
+		759D673C2A36CDE40073158A /* DinStorageBatteryPayloadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66452A36CDE40073158A /* DinStorageBatteryPayloadParser.swift */; };
+		759D673D2A36CDE40073158A /* DinStorageBatteryHP5000Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66472A36CDE40073158A /* DinStorageBatteryHP5000Operator.swift */; };
+		759D673E2A36CDE40073158A /* DinStorageBatteryHP5000Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66482A36CDE40073158A /* DinStorageBatteryHP5000Control.swift */; };
+		759D673F2A36CDE40073158A /* DinStorageBatteryHP5000Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66492A36CDE40073158A /* DinStorageBatteryHP5000Manager.swift */; };
+		759D67402A36CDE40073158A /* DinStorageBatteryHP5000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D664A2A36CDE40073158A /* DinStorageBatteryHP5000.swift */; };
+		759D67412A36CDE40073158A /* DinStorageBatteryUDPControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D664B2A36CDE40073158A /* DinStorageBatteryUDPControl.swift */; };
+		759D67422A36CDE40073158A /* DinStorageBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D664C2A36CDE40073158A /* DinStorageBattery.swift */; };
+		759D67432A36CDE40073158A /* DinStorageBatteryHP5001Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D664E2A36CDE40073158A /* DinStorageBatteryHP5001Manager.swift */; };
+		759D67442A36CDE40073158A /* DinStorageBatteryHP5001Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D664F2A36CDE40073158A /* DinStorageBatteryHP5001Control.swift */; };
+		759D67452A36CDE40073158A /* DinStorageBatteryHP5001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66502A36CDE40073158A /* DinStorageBatteryHP5001.swift */; };
+		759D67462A36CDE40073158A /* DinStorageBatteryHP5001Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66512A36CDE40073158A /* DinStorageBatteryHP5001Operator.swift */; };
+		759D67472A36CDE40073158A /* DinStorageBatteryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66522A36CDE40073158A /* DinStorageBatteryRequest.swift */; };
+		759D67482A36CDE40073158A /* DinStorageBatteryStatsRequest+Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66532A36CDE40073158A /* DinStorageBatteryStatsRequest+Parameter.swift */; };
+		759D67492A36CDE40073158A /* DinStorageBatteryStatsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66542A36CDE40073158A /* DinStorageBatteryStatsRequest.swift */; };
+		759D674A2A36CDE40073158A /* DinCoreUserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66552A36CDE40073158A /* DinCoreUserDelegate.swift */; };
+		759D674B2A36CDE40073158A /* DinCoreHomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66562A36CDE40073158A /* DinCoreHomeDelegate.swift */; };
+		759D674C2A36CDE40073158A /* DinStorageBatteryPeripheral+Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66582A36CDE40073158A /* DinStorageBatteryPeripheral+Command.swift */; };
+		759D674D2A36CDE40073158A /* DinStorageBatteryPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66592A36CDE40073158A /* DinStorageBatteryPeripheral.swift */; };
+		759D674F2A36CDE40073158A /* DinDoorbellPeripheral+Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D665C2A36CDE40073158A /* DinDoorbellPeripheral+Command.swift */; };
+		759D67502A36CDE40073158A /* DinDoorbellPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D665D2A36CDE40073158A /* DinDoorbellPeripheral.swift */; };
+		759D67512A36CDE40073158A /* DinVideoDoorbellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D665F2A36CDE40073158A /* DinVideoDoorbellManager.swift */; };
+		759D67522A36CDE40073158A /* DinVideoDoorbell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66602A36CDE40073158A /* DinVideoDoorbell.swift */; };
+		759D67532A36CDE40073158A /* DinVideoDoorbellOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66612A36CDE40073158A /* DinVideoDoorbellOperator.swift */; };
+		759D67542A36CDE40073158A /* DinCoreStorageBatteryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66622A36CDE40073158A /* DinCoreStorageBatteryDelegate.swift */; };
+		759D67552A36CDE40073158A /* DinChannelEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66642A36CDE40073158A /* DinChannelEncryptor.swift */; };
+		759D67562A36CDE40073158A /* DinChannelUDPControl+Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66662A36CDE40073158A /* DinChannelUDPControl+Op.swift */; };
+		759D67572A36CDE40073158A /* DinChannelUDPControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66672A36CDE40073158A /* DinChannelUDPControl.swift */; };
+		759D67582A36CDE40073158A /* DinChannelKcpObjectFileFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66692A36CDE40073158A /* DinChannelKcpObjectFileFetcher.swift */; };
+		759D67592A36CDE40073158A /* DinCameraKcpObjectManager+ResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D666A2A36CDE40073158A /* DinCameraKcpObjectManager+ResultHandler.swift */; };
+		759D675A2A36CDE40073158A /* DinChannelKcpOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D666B2A36CDE40073158A /* DinChannelKcpOperation.swift */; };
+		759D675B2A36CDE40073158A /* DinCameraKcpObjectManager+Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D666C2A36CDE40073158A /* DinCameraKcpObjectManager+Ops.swift */; };
+		759D675C2A36CDE40073158A /* DinChannelKcpObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D666D2A36CDE40073158A /* DinChannelKcpObjectManager.swift */; };
+		759D675D2A36CDE40073158A /* DinChannelKcpOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D666E2A36CDE40073158A /* DinChannelKcpOperationManager.swift */; };
+		759D675E2A36CDE40073158A /* DinChannelP2PDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D666F2A36CDE40073158A /* DinChannelP2PDiscover.swift */; };
+		759D675F2A36CDE40073158A /* DinBLEPeripheralPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66712A36CDE40073158A /* DinBLEPeripheralPool.swift */; };
+		759D67602A36CDE40073158A /* DinConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66722A36CDE40073158A /* DinConstants.swift */; };
+		759D67612A36CDE40073158A /* DinPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66742A36CDE40073158A /* DinPeripheral.swift */; };
+		759D67622A36CDE40073158A /* PairDoorbellDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66762A36CDE40073158A /* PairDoorbellDevice.swift */; };
+		759D67632A36CDE40073158A /* PairIPCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66772A36CDE40073158A /* PairIPCDevice.swift */; };
+		759D67642A36CDE40073158A /* PairStorageBatteryDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66782A36CDE40073158A /* PairStorageBatteryDevice.swift */; };
+		759D67652A36CDE40073158A /* PairPanelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66792A36CDE40073158A /* PairPanelDevice.swift */; };
+		759D67662A36CDE40073158A /* DinEventBusCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D667D2A36CDE40073158A /* DinEventBusCamera.swift */; };
+		759D67672A36CDE40073158A /* DinEventBusStorageBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D667E2A36CDE40073158A /* DinEventBusStorageBattery.swift */; };
+		759D67682A36CDE40073158A /* DinEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D667F2A36CDE40073158A /* DinEventBus.swift */; };
+		759D67692A36CDE40073158A /* DinEventBusBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66802A36CDE40073158A /* DinEventBusBasic.swift */; };
+		759D676A2A36CDE40073158A /* Int+Convertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66822A36CDE40073158A /* Int+Convertion.swift */; };
+		759D676B2A36CDE40073158A /* UInt8+Convertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66832A36CDE40073158A /* UInt8+Convertion.swift */; };
+		759D676C2A36CDE40073158A /* Collections+DinHomeDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66842A36CDE40073158A /* Collections+DinHomeDeviceProtocol.swift */; };
+		759D676D2A36CDE40073158A /* FixedWidthInteger+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66852A36CDE40073158A /* FixedWidthInteger+Data.swift */; };
+		759D676E2A36CDE40073158A /* DinAccessory+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66862A36CDE40073158A /* DinAccessory+Extension.swift */; };
+		759D676F2A36CDE40073158A /* Data+ASCII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66872A36CDE40073158A /* Data+ASCII.swift */; };
+		759D67702A36CDE40073158A /* Data+Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66882A36CDE40073158A /* Data+Integer.swift */; };
+		759D67712A36CDE40073158A /* DinHttpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D668A2A36CDE40073158A /* DinHttpProvider.swift */; };
+		759D67722A36CDE40073158A /* DinNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D668B2A36CDE40073158A /* DinNetworkError.swift */; };
+		759D67732A36CDE40073158A /* DinServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D668C2A36CDE40073158A /* DinServer.swift */; };
+		759D67742A36CDE40073158A /* DinHttpParams+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D668D2A36CDE40073158A /* DinHttpParams+Default.swift */; };
+		759D67752A36CDE40073158A /* DinApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D668E2A36CDE40073158A /* DinApi.swift */; };
+		759D67762A36CDE40073158A /* DinHttpParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D668F2A36CDE40073158A /* DinHttpParams.swift */; };
+		759D67772A36CDE40073158A /* DinHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66902A36CDE40073158A /* DinHttpRequest.swift */; };
+		759D67782A36CDE40073158A /* DinCoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66912A36CDE40073158A /* DinCoreLogger.swift */; };
+		759D67792A36CDE40073158A /* DinQueueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66922A36CDE40073158A /* DinQueueName.swift */; };
+		759D677A2A36CDE40073158A /* DinDeviceScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66932A36CDE40073158A /* DinDeviceScanner.swift */; };
+		759D677B2A36CDE40073158A /* DinDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66942A36CDE40073158A /* DinDelay.swift */; };
+		759D677C2A36CDE40073158A /* ICoAPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 759D66972A36CDE40073158A /* ICoAPMessage.m */; };
+		759D677D2A36CDE40073158A /* NSString+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 759D66982A36CDE40073158A /* NSString+hex.m */; };
+		759D677E2A36CDE40073158A /* ICoAPExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 759D66992A36CDE40073158A /* ICoAPExchange.m */; };
+		759D677F2A36CDE40073158A /* NSString+hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 759D669A2A36CDE40073158A /* NSString+hex.h */; };
+		759D67802A36CDE40073158A /* ICoAPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 759D669B2A36CDE40073158A /* ICoAPMessage.h */; };
+		759D67812A36CDE40073158A /* ICoAPExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 759D669C2A36CDE40073158A /* ICoAPExchange.h */; };
+		759D67822A36CDE40073158A /* DinCameraV015Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D669E2A36CDE40073158A /* DinCameraV015Operator.swift */; };
+		759D67832A36CDE40073158A /* DinCameraV015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D669F2A36CDE40073158A /* DinCameraV015.swift */; };
+		759D67842A36CDE40073158A /* DinCameraV015Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A02A36CDE40073158A /* DinCameraV015Manager.swift */; };
+		759D67852A36CDE40073158A /* DinLiveStreamingRequest+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A22A36CDE40073158A /* DinLiveStreamingRequest+Parameters.swift */; };
+		759D67872A36CDE40073158A /* DinLiveStreamingKcpObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A42A36CDE40073158A /* DinLiveStreamingKcpObject.swift */; };
+		759D67882A36CDE40073158A /* DinLiveStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A52A36CDE40073158A /* DinLiveStreaming.swift */; };
+		759D67892A36CDE40073158A /* DinLiveStreamingOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A62A36CDE40073158A /* DinLiveStreamingOperator.swift */; };
+		759D678A2A36CDE40073158A /* DinLiveStreamingControl+Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A82A36CDE40073158A /* DinLiveStreamingControl+Op.swift */; };
+		759D678B2A36CDE40073158A /* DinLiveStreamingControl+KCPObjectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66A92A36CDE40073158A /* DinLiveStreamingControl+KCPObjectDelegate.swift */; };
+		759D678C2A36CDE40073158A /* DinLiveStreamingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66AA2A36CDE40073158A /* DinLiveStreamingRequest.swift */; };
+		759D678D2A36CDE40073158A /* DinLiveStreamingControl+SettingOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66AB2A36CDE40073158A /* DinLiveStreamingControl+SettingOp.swift */; };
+		759D678E2A36CDE40073158A /* DinLiveStreamingDataCacheControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66AC2A36CDE40073158A /* DinLiveStreamingDataCacheControl.swift */; };
+		759D678F2A36CDE40073158A /* DinLiveStreamingControl+ActionOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66AD2A36CDE40073158A /* DinLiveStreamingControl+ActionOp.swift */; };
+		759D67902A36CDE40073158A /* DinLiveStreamingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66AE2A36CDE40073158A /* DinLiveStreamingControl.swift */; };
+		759D67912A36CDE40073158A /* DinHomeDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B22A36CDE40073158A /* DinHomeDeviceProtocol.swift */; };
+		759D67922A36CDE40073158A /* DinHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B32A36CDE40073158A /* DinHome.swift */; };
+		759D67932A36CDE40073158A /* DinHomeDeviceManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B42A36CDE40073158A /* DinHomeDeviceManagerProtocol.swift */; };
+		759D67942A36CDE40073158A /* DinHomeDeviceSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B52A36CDE40073158A /* DinHomeDeviceSelection.swift */; };
+		759D67952A36CDE40073158A /* DinCore+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B62A36CDE40073158A /* DinCore+Home.swift */; };
+		759D67962A36CDE40073158A /* DinHome+Convenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B72A36CDE40073158A /* DinHome+Convenient.swift */; };
+		759D67972A36CDE40073158A /* DinUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66B92A36CDE40073158A /* DinUser.swift */; };
+		759D67982A36CDE40073158A /* DinMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66BA2A36CDE40073158A /* DinMember.swift */; };
+		759D67992A36CDE40073158A /* DinHomeContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66BB2A36CDE40073158A /* DinHomeContact.swift */; };
+		759D679A2A36CDE40073158A /* DinMemberProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66BC2A36CDE40073158A /* DinMemberProfile.swift */; };
+		759D679B2A36CDE40073158A /* DinCore+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66BD2A36CDE40073158A /* DinCore+User.swift */; };
+		759D679C2A36CDE40073158A /* DinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66BF2A36CDE40073158A /* DinRequest.swift */; };
+		759D679D2A36CDE40073158A /* DinUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C02A36CDE40073158A /* DinUserRequest.swift */; };
+		759D679E2A36CDE40073158A /* DinTuyaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C12A36CDE40073158A /* DinTuyaRequest.swift */; };
+		759D679F2A36CDE40073158A /* DinAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C22A36CDE40073158A /* DinAuthRequest.swift */; };
+		759D67A02A36CDE40073158A /* DinThirdPartyCameraRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C32A36CDE40073158A /* DinThirdPartyCameraRequest.swift */; };
+		759D67A12A36CDE40073158A /* DinQRCodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C42A36CDE40073158A /* DinQRCodeRequest.swift */; };
+		759D67A22A36CDE40073158A /* DinUploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C52A36CDE40073158A /* DinUploadRequest.swift */; };
+		759D67A32A36CDE40073158A /* DinHomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C62A36CDE40073158A /* DinHomeRequest.swift */; };
+		759D67A42A36CDE40073158A /* DinUDPGroupControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C82A36CDE40073158A /* DinUDPGroupControl.swift */; };
+		759D67A52A36CDE40073158A /* DinGroupEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66C92A36CDE40073158A /* DinGroupEncryptor.swift */; };
+		759D67A62A36CDE40073158A /* DinServerEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66CA2A36CDE40073158A /* DinServerEncryptor.swift */; };
+		759D67A72A36CDE40073158A /* DinGroupCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66CB2A36CDE40073158A /* DinGroupCommunicator.swift */; };
+		759D67A82A36CDE40073158A /* DinUDPGroupControl+Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66CC2A36CDE40073158A /* DinUDPGroupControl+Ops.swift */; };
+		759D67A92A36CDE40073158A /* DinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66CD2A36CDE40073158A /* DinModel.swift */; };
+		759D67AA2A36CDE40073158A /* DinIPCPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66CF2A36CDE40073158A /* DinIPCPeripheral.swift */; };
+		759D67AB2A36CDE40073158A /* DinIPCPeripheral+Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D02A36CDE40073158A /* DinIPCPeripheral+Command.swift */; };
+		759D67AC2A36CDE40073158A /* DinPanelPeripheral+Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D22A36CDE40073158A /* DinPanelPeripheral+Command.swift */; };
+		759D67AD2A36CDE40073158A /* DinPanelPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D32A36CDE40073158A /* DinPanelPeripheral.swift */; };
+		759D67AE2A36CDE40073158A /* CommandSuccessfulResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D52A36CDE40073158A /* CommandSuccessfulResponse.swift */; };
+		759D67AF2A36CDE40073158A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D62A36CDE40073158A /* Command.swift */; };
+		759D67B02A36CDE40073158A /* CommandRequestFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D72A36CDE40073158A /* CommandRequestFailure.swift */; };
+		759D67B12A36CDE40073158A /* MSCTCommandUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D82A36CDE40073158A /* MSCTCommandUserInfo.swift */; };
+		759D67B22A36CDE40073158A /* DinCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66D92A36CDE40073158A /* DinCore.swift */; };
+		759D67B32A36CDE40073158A /* DinCameraV006Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66DB2A36CDE40073158A /* DinCameraV006Operator.swift */; };
+		759D67B42A36CDE40073158A /* DinCameraV006.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66DC2A36CDE40073158A /* DinCameraV006.swift */; };
+		759D67B52A36CDE40073158A /* DinCameraV006Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66DD2A36CDE40073158A /* DinCameraV006Manager.swift */; };
+		759D67B62A36CDE40073158A /* DinCoreCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66DE2A36CDE40073158A /* DinCoreCameraDelegate.swift */; };
+		759D67B72A36CDE40073158A /* DinCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66E02A36CDE40073158A /* DinCamera.swift */; };
+		759D67B82A36CDE40073158A /* DinCameraOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66E12A36CDE40073158A /* DinCameraOperator.swift */; };
+		759D67B92A36CDE40073158A /* DinCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759D66E22A36CDE40073158A /* DinCameraManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		759D65C62A36CD050073158A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 759D65B12A36CD050073158A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759D65B92A36CD050073158A;
+			remoteInfo = DinCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D9D0D842E27E49A008469B5 /* DinR2UploadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinR2UploadRequest.swift; sourceTree = "<group>"; };
+		0D9D0D872E27E806008469B5 /* DinR2FileForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinR2FileForm.swift; sourceTree = "<group>"; };
+		0D9D0D892E27EE46008469B5 /* DinR2UploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinR2UploadManager.swift; sourceTree = "<group>"; };
+		759D65BA2A36CD050073158A /* DinCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DinCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		759D65BD2A36CD050073158A /* DinCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinCore.h; sourceTree = "<group>"; };
+		759D65BE2A36CD050073158A /* DinCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DinCore.docc; sourceTree = "<group>"; };
+		759D65C42A36CD050073158A /* DinCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		759D65C92A36CD050073158A /* DinCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinCoreTests.swift; sourceTree = "<group>"; };
+		759D65D62A36CDE30073158A /* DinDataManager+Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinDataManager+Domain.swift"; sourceTree = "<group>"; };
+		759D65D72A36CDE30073158A /* DinDataManager+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinDataManager+User.swift"; sourceTree = "<group>"; };
+		759D65D82A36CDE30073158A /* DinDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinDataManager.swift; sourceTree = "<group>"; };
+		759D65DA2A36CDE30073158A /* DinScannedBLEPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinScannedBLEPeripheral.swift; sourceTree = "<group>"; };
+		759D65DC2A36CDE30073158A /* DinBLEPeripheralIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinBLEPeripheralIdentifiable.swift; sourceTree = "<group>"; };
+		759D65DD2A36CDE30073158A /* DinBLEPeripheralScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinBLEPeripheralScanner.swift; sourceTree = "<group>"; };
+		759D65E02A36CDE30073158A /* DinNovaPanelControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelControl.swift; sourceTree = "<group>"; };
+		759D65E12A36CDE30073158A /* DinNovaPanelEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelEventHandler.swift; sourceTree = "<group>"; };
+		759D65E32A36CDE30073158A /* DinNovaPanelControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D65E42A36CDE30073158A /* DinWebsocketControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinWebsocketControl.swift; sourceTree = "<group>"; };
+		759D65E52A36CDE30073158A /* DinNovaPanelSocketResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelSocketResponse.swift; sourceTree = "<group>"; };
+		759D65E62A36CDE30073158A /* DinNovaPanelControl+OtherWSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+OtherWSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D65E72A36CDE30073158A /* DinNovaPanelControl+WSOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+WSOperation.swift"; sourceTree = "<group>"; };
+		759D65E82A36CDE30073158A /* DinLearnModeWebSocketControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLearnModeWebSocketControl.swift; sourceTree = "<group>"; };
+		759D65E92A36CDE30073158A /* DinNovaPanelControl+InfoKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+InfoKey.swift"; sourceTree = "<group>"; };
+		759D65EA2A36CDE30073158A /* DinNovaPanelQueueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelQueueName.swift; sourceTree = "<group>"; };
+		759D65EC2A36CDE30073158A /* DinNovaPanelControl+HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+HTTPResponseHandler.swift"; sourceTree = "<group>"; };
+		759D65ED2A36CDE30073158A /* DinNovaPanelControl+HTTPOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+HTTPOperation.swift"; sourceTree = "<group>"; };
+		759D65EF2A36CDE30073158A /* DinNovaWidgetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaWidgetRequest.swift; sourceTree = "<group>"; };
+		759D65F02A36CDE30073158A /* DinNovaWidgetRequest+Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaWidgetRequest+Parameters.swift"; sourceTree = "<group>"; };
+		759D65F12A36CDE30073158A /* DinNovaPluginOperationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPluginOperationRequest.swift; sourceTree = "<group>"; };
+		759D65F22A36CDE30073158A /* DinNovaPanelRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelRequest.swift; sourceTree = "<group>"; };
+		759D65F32A36CDE30073158A /* DinNovaPluginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPluginRequest.swift; sourceTree = "<group>"; };
+		759D65F42A36CDE30073158A /* DinNovaPanelOperationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelOperationRequest.swift; sourceTree = "<group>"; };
+		759D65F52A36CDE30073158A /* DinNovaPanelControl+InfoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelControl+InfoHandler.swift"; sourceTree = "<group>"; };
+		759D65F62A36CDE30073158A /* DinNovaPanelOperationInfoHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelOperationInfoHolder.swift; sourceTree = "<group>"; };
+		759D65F82A36CDE30073158A /* DinNovaPanelLANUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelLANUtil.swift; sourceTree = "<group>"; };
+		759D65FA2A36CDE30073158A /* DinDoorWindowSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinDoorWindowSensor.swift; sourceTree = "<group>"; };
+		759D65FB2A36CDE30073158A /* DinNovaPanelPing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelPing.swift; sourceTree = "<group>"; };
+		759D65FD2A36CDE30073158A /* DinNovaPanelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelManager.swift; sourceTree = "<group>"; };
+		759D65FE2A36CDE30073158A /* DinNovaPanelManager+PluginResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelManager+PluginResponseHandler.swift"; sourceTree = "<group>"; };
+		759D65FF2A36CDE30073158A /* DinNovaPanelManager+Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelManager+Plugin.swift"; sourceTree = "<group>"; };
+		759D66002A36CDE30073158A /* DinDeviceTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinDeviceTokenModel.swift; sourceTree = "<group>"; };
+		759D66012A36CDE30073158A /* DinCareModeStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCareModeStatus.swift; sourceTree = "<group>"; };
+		759D66032A36CDE30073158A /* DinNovaPanelSOSOperationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelSOSOperationResult.swift; sourceTree = "<group>"; };
+		759D66042A36CDE30073158A /* DinNovaPanelArmOperationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelArmOperationResult.swift; sourceTree = "<group>"; };
+		759D66052A36CDE30073158A /* DinSmartPlug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinSmartPlug.swift; sourceTree = "<group>"; };
+		759D66062A36CDE30073158A /* DinNovaPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanel.swift; sourceTree = "<group>"; };
+		759D66072A36CDE30073158A /* DinNovaPanelEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelEvent.swift; sourceTree = "<group>"; };
+		759D66092A36CDE30073158A /* DinNovaPanelOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPanelOperator.swift; sourceTree = "<group>"; };
+		759D660A2A36CDE30073158A /* DinNovaPanelOperator+ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelOperator+ResponseHandler.swift"; sourceTree = "<group>"; };
+		759D660B2A36CDE30073158A /* DinNovaPanelOperator+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPanelOperator+Operation.swift"; sourceTree = "<group>"; };
+		759D660F2A36CDE30073158A /* DinNovaSirenControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSirenControl+Operation.swift"; sourceTree = "<group>"; };
+		759D66102A36CDE30073158A /* DinNovaSiren.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSiren.swift; sourceTree = "<group>"; };
+		759D66112A36CDE30073158A /* DinNovaSirenControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSirenControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66122A36CDE30073158A /* DinNovaSirenControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSirenControl.swift; sourceTree = "<group>"; };
+		759D66142A36CDE30073158A /* DinNovaDoorWindowSensorControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaDoorWindowSensorControl+Operation.swift"; sourceTree = "<group>"; };
+		759D66152A36CDE30073158A /* DinNovaDoorWindowSensorControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaDoorWindowSensorControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66162A36CDE30073158A /* DinNovaDoorWindowSensorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaDoorWindowSensorControl.swift; sourceTree = "<group>"; };
+		759D66172A36CDE30073158A /* DinNovaDoorWindowSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaDoorWindowSensor.swift; sourceTree = "<group>"; };
+		759D66182A36CDE30073158A /* DinNovaPluginOperationInfoHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPluginOperationInfoHolder.swift; sourceTree = "<group>"; };
+		759D66192A36CDE30073158A /* DinNovaPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPlugin.swift; sourceTree = "<group>"; };
+		759D661A2A36CDE30073158A /* DinNovaPluginAdder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPluginAdder.swift; sourceTree = "<group>"; };
+		759D661C2A36CDE30073158A /* DinNovaSmartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSmartButton.swift; sourceTree = "<group>"; };
+		759D661D2A36CDE30073158A /* DinNovaSmartButtonControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSmartButtonControl.swift; sourceTree = "<group>"; };
+		759D661E2A36CDE30073158A /* DinNovaSmartButtonControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSmartButtonControl+Operation.swift"; sourceTree = "<group>"; };
+		759D661F2A36CDE30073158A /* DinNovaSmartButtonControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSmartButtonControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66212A36CDE30073158A /* DinNovaKeypad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaKeypad.swift; sourceTree = "<group>"; };
+		759D66222A36CDE30073158A /* DinNovaKeypadControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaKeypadControl.swift; sourceTree = "<group>"; };
+		759D66232A36CDE30073158A /* DinNovaKeypadControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaKeypadControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66242A36CDE30073158A /* DinNovaKeypadControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaKeypadControl+Operation.swift"; sourceTree = "<group>"; };
+		759D66252A36CDE30073158A /* DinNovaPluginControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPluginControl.swift; sourceTree = "<group>"; };
+		759D66262A36CDE30073158A /* DinNovaPluginControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPluginControl+Operation.swift"; sourceTree = "<group>"; };
+		759D66272A36CDE30073158A /* DinNovaPluginOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaPluginOperator.swift; sourceTree = "<group>"; };
+		759D66292A36CDE30073158A /* DinNovaSecurityAccessoryControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSecurityAccessoryControl+Operation.swift"; sourceTree = "<group>"; };
+		759D662A2A36CDE30073158A /* DinNovaSecurityAccessoryControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSecurityAccessoryControl.swift; sourceTree = "<group>"; };
+		759D662B2A36CDE30073158A /* DinNovaSecurityAccessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSecurityAccessory.swift; sourceTree = "<group>"; };
+		759D662C2A36CDE30073158A /* DinNovaSecurityAccessoryControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSecurityAccessoryControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D662E2A36CDE30073158A /* DinNovaRelayControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaRelayControl.swift; sourceTree = "<group>"; };
+		759D662F2A36CDE30073158A /* DinNovaRelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaRelay.swift; sourceTree = "<group>"; };
+		759D66302A36CDE30073158A /* DinNovaRelayControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaRelayControl+Operation.swift"; sourceTree = "<group>"; };
+		759D66312A36CDE30073158A /* DinNovaRelayControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaRelayControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66332A36CDE30073158A /* DinNovaRemoteControlControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaRemoteControlControl+Operation.swift"; sourceTree = "<group>"; };
+		759D66342A36CDE30073158A /* DinNovaRemoteControlControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaRemoteControlControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66352A36CDE40073158A /* DinNovaRemoteControlControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaRemoteControlControl.swift; sourceTree = "<group>"; };
+		759D66362A36CDE40073158A /* DinNovaRemoteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaRemoteControl.swift; sourceTree = "<group>"; };
+		759D66382A36CDE40073158A /* DinNovaSmartPlugControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSmartPlugControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D66392A36CDE40073158A /* DinNovaSmartPlug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSmartPlug.swift; sourceTree = "<group>"; };
+		759D663A2A36CDE40073158A /* DinNovaSmartPlugControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNovaSmartPlugControl.swift; sourceTree = "<group>"; };
+		759D663B2A36CDE40073158A /* DinNovaSmartPlugControl+Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaSmartPlugControl+Operation.swift"; sourceTree = "<group>"; };
+		759D663C2A36CDE40073158A /* DinNovaPluginControl+WSResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinNovaPluginControl+WSResponseHandler.swift"; sourceTree = "<group>"; };
+		759D663E2A36CDE40073158A /* DinStorageBatteryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryOperator.swift; sourceTree = "<group>"; };
+		759D663F2A36CDE40073158A /* DinStorageBatteryControl+UpdateInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinStorageBatteryControl+UpdateInfo.swift"; sourceTree = "<group>"; };
+		759D66402A36CDE40073158A /* DinStorageBatteryRequest+Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinStorageBatteryRequest+Parameters.swift"; sourceTree = "<group>"; };
+		759D66412A36CDE40073158A /* DinStorageBatteryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryManager.swift; sourceTree = "<group>"; };
+		759D66422A36CDE40073158A /* DinStorageBatteryControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryControl.swift; sourceTree = "<group>"; };
+		759D66432A36CDE40073158A /* DinStorageBatteryHTTPCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHTTPCommand.swift; sourceTree = "<group>"; };
+		759D66442A36CDE40073158A /* DinStorageBatteryMSCTCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryMSCTCommand.swift; sourceTree = "<group>"; };
+		759D66452A36CDE40073158A /* DinStorageBatteryPayloadParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryPayloadParser.swift; sourceTree = "<group>"; };
+		759D66472A36CDE40073158A /* DinStorageBatteryHP5000Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5000Operator.swift; sourceTree = "<group>"; };
+		759D66482A36CDE40073158A /* DinStorageBatteryHP5000Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5000Control.swift; sourceTree = "<group>"; };
+		759D66492A36CDE40073158A /* DinStorageBatteryHP5000Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5000Manager.swift; sourceTree = "<group>"; };
+		759D664A2A36CDE40073158A /* DinStorageBatteryHP5000.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5000.swift; sourceTree = "<group>"; };
+		759D664B2A36CDE40073158A /* DinStorageBatteryUDPControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryUDPControl.swift; sourceTree = "<group>"; };
+		759D664C2A36CDE40073158A /* DinStorageBattery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBattery.swift; sourceTree = "<group>"; };
+		759D664E2A36CDE40073158A /* DinStorageBatteryHP5001Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5001Manager.swift; sourceTree = "<group>"; };
+		759D664F2A36CDE40073158A /* DinStorageBatteryHP5001Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5001Control.swift; sourceTree = "<group>"; };
+		759D66502A36CDE40073158A /* DinStorageBatteryHP5001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5001.swift; sourceTree = "<group>"; };
+		759D66512A36CDE40073158A /* DinStorageBatteryHP5001Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryHP5001Operator.swift; sourceTree = "<group>"; };
+		759D66522A36CDE40073158A /* DinStorageBatteryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryRequest.swift; sourceTree = "<group>"; };
+		759D66532A36CDE40073158A /* DinStorageBatteryStatsRequest+Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinStorageBatteryStatsRequest+Parameter.swift"; sourceTree = "<group>"; };
+		759D66542A36CDE40073158A /* DinStorageBatteryStatsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryStatsRequest.swift; sourceTree = "<group>"; };
+		759D66552A36CDE40073158A /* DinCoreUserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCoreUserDelegate.swift; sourceTree = "<group>"; };
+		759D66562A36CDE40073158A /* DinCoreHomeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCoreHomeDelegate.swift; sourceTree = "<group>"; };
+		759D66582A36CDE40073158A /* DinStorageBatteryPeripheral+Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinStorageBatteryPeripheral+Command.swift"; sourceTree = "<group>"; };
+		759D66592A36CDE40073158A /* DinStorageBatteryPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinStorageBatteryPeripheral.swift; sourceTree = "<group>"; };
+		759D665C2A36CDE40073158A /* DinDoorbellPeripheral+Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinDoorbellPeripheral+Command.swift"; sourceTree = "<group>"; };
+		759D665D2A36CDE40073158A /* DinDoorbellPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinDoorbellPeripheral.swift; sourceTree = "<group>"; };
+		759D665F2A36CDE40073158A /* DinVideoDoorbellManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinVideoDoorbellManager.swift; sourceTree = "<group>"; };
+		759D66602A36CDE40073158A /* DinVideoDoorbell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinVideoDoorbell.swift; sourceTree = "<group>"; };
+		759D66612A36CDE40073158A /* DinVideoDoorbellOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinVideoDoorbellOperator.swift; sourceTree = "<group>"; };
+		759D66622A36CDE40073158A /* DinCoreStorageBatteryDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCoreStorageBatteryDelegate.swift; sourceTree = "<group>"; };
+		759D66642A36CDE40073158A /* DinChannelEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelEncryptor.swift; sourceTree = "<group>"; };
+		759D66662A36CDE40073158A /* DinChannelUDPControl+Op.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinChannelUDPControl+Op.swift"; sourceTree = "<group>"; };
+		759D66672A36CDE40073158A /* DinChannelUDPControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelUDPControl.swift; sourceTree = "<group>"; };
+		759D66692A36CDE40073158A /* DinChannelKcpObjectFileFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelKcpObjectFileFetcher.swift; sourceTree = "<group>"; };
+		759D666A2A36CDE40073158A /* DinCameraKcpObjectManager+ResultHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinCameraKcpObjectManager+ResultHandler.swift"; sourceTree = "<group>"; };
+		759D666B2A36CDE40073158A /* DinChannelKcpOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelKcpOperation.swift; sourceTree = "<group>"; };
+		759D666C2A36CDE40073158A /* DinCameraKcpObjectManager+Ops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinCameraKcpObjectManager+Ops.swift"; sourceTree = "<group>"; };
+		759D666D2A36CDE40073158A /* DinChannelKcpObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelKcpObjectManager.swift; sourceTree = "<group>"; };
+		759D666E2A36CDE40073158A /* DinChannelKcpOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelKcpOperationManager.swift; sourceTree = "<group>"; };
+		759D666F2A36CDE40073158A /* DinChannelP2PDiscover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinChannelP2PDiscover.swift; sourceTree = "<group>"; };
+		759D66712A36CDE40073158A /* DinBLEPeripheralPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinBLEPeripheralPool.swift; sourceTree = "<group>"; };
+		759D66722A36CDE40073158A /* DinConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinConstants.swift; sourceTree = "<group>"; };
+		759D66742A36CDE40073158A /* DinPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinPeripheral.swift; sourceTree = "<group>"; };
+		759D66762A36CDE40073158A /* PairDoorbellDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairDoorbellDevice.swift; sourceTree = "<group>"; };
+		759D66772A36CDE40073158A /* PairIPCDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairIPCDevice.swift; sourceTree = "<group>"; };
+		759D66782A36CDE40073158A /* PairStorageBatteryDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairStorageBatteryDevice.swift; sourceTree = "<group>"; };
+		759D66792A36CDE40073158A /* PairPanelDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairPanelDevice.swift; sourceTree = "<group>"; };
+		759D667D2A36CDE40073158A /* DinEventBusCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinEventBusCamera.swift; sourceTree = "<group>"; };
+		759D667E2A36CDE40073158A /* DinEventBusStorageBattery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinEventBusStorageBattery.swift; sourceTree = "<group>"; };
+		759D667F2A36CDE40073158A /* DinEventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinEventBus.swift; sourceTree = "<group>"; };
+		759D66802A36CDE40073158A /* DinEventBusBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinEventBusBasic.swift; sourceTree = "<group>"; };
+		759D66822A36CDE40073158A /* Int+Convertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Convertion.swift"; sourceTree = "<group>"; };
+		759D66832A36CDE40073158A /* UInt8+Convertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt8+Convertion.swift"; sourceTree = "<group>"; };
+		759D66842A36CDE40073158A /* Collections+DinHomeDeviceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collections+DinHomeDeviceProtocol.swift"; sourceTree = "<group>"; };
+		759D66852A36CDE40073158A /* FixedWidthInteger+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Data.swift"; sourceTree = "<group>"; };
+		759D66862A36CDE40073158A /* DinAccessory+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinAccessory+Extension.swift"; sourceTree = "<group>"; };
+		759D66872A36CDE40073158A /* Data+ASCII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+ASCII.swift"; sourceTree = "<group>"; };
+		759D66882A36CDE40073158A /* Data+Integer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Integer.swift"; sourceTree = "<group>"; };
+		759D668A2A36CDE40073158A /* DinHttpProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHttpProvider.swift; sourceTree = "<group>"; };
+		759D668B2A36CDE40073158A /* DinNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinNetworkError.swift; sourceTree = "<group>"; };
+		759D668C2A36CDE40073158A /* DinServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinServer.swift; sourceTree = "<group>"; };
+		759D668D2A36CDE40073158A /* DinHttpParams+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinHttpParams+Default.swift"; sourceTree = "<group>"; };
+		759D668E2A36CDE40073158A /* DinApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinApi.swift; sourceTree = "<group>"; };
+		759D668F2A36CDE40073158A /* DinHttpParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHttpParams.swift; sourceTree = "<group>"; };
+		759D66902A36CDE40073158A /* DinHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHttpRequest.swift; sourceTree = "<group>"; };
+		759D66912A36CDE40073158A /* DinCoreLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCoreLogger.swift; sourceTree = "<group>"; };
+		759D66922A36CDE40073158A /* DinQueueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinQueueName.swift; sourceTree = "<group>"; };
+		759D66932A36CDE40073158A /* DinDeviceScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinDeviceScanner.swift; sourceTree = "<group>"; };
+		759D66942A36CDE40073158A /* DinDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinDelay.swift; sourceTree = "<group>"; };
+		759D66972A36CDE40073158A /* ICoAPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICoAPMessage.m; sourceTree = "<group>"; };
+		759D66982A36CDE40073158A /* NSString+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+hex.m"; sourceTree = "<group>"; };
+		759D66992A36CDE40073158A /* ICoAPExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICoAPExchange.m; sourceTree = "<group>"; };
+		759D669A2A36CDE40073158A /* NSString+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+hex.h"; sourceTree = "<group>"; };
+		759D669B2A36CDE40073158A /* ICoAPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICoAPMessage.h; sourceTree = "<group>"; };
+		759D669C2A36CDE40073158A /* ICoAPExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICoAPExchange.h; sourceTree = "<group>"; };
+		759D669E2A36CDE40073158A /* DinCameraV015Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraV015Operator.swift; sourceTree = "<group>"; };
+		759D669F2A36CDE40073158A /* DinCameraV015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraV015.swift; sourceTree = "<group>"; };
+		759D66A02A36CDE40073158A /* DinCameraV015Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraV015Manager.swift; sourceTree = "<group>"; };
+		759D66A22A36CDE40073158A /* DinLiveStreamingRequest+Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinLiveStreamingRequest+Parameters.swift"; sourceTree = "<group>"; };
+		759D66A42A36CDE40073158A /* DinLiveStreamingKcpObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLiveStreamingKcpObject.swift; sourceTree = "<group>"; };
+		759D66A52A36CDE40073158A /* DinLiveStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLiveStreaming.swift; sourceTree = "<group>"; };
+		759D66A62A36CDE40073158A /* DinLiveStreamingOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLiveStreamingOperator.swift; sourceTree = "<group>"; };
+		759D66A82A36CDE40073158A /* DinLiveStreamingControl+Op.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinLiveStreamingControl+Op.swift"; sourceTree = "<group>"; };
+		759D66A92A36CDE40073158A /* DinLiveStreamingControl+KCPObjectDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinLiveStreamingControl+KCPObjectDelegate.swift"; sourceTree = "<group>"; };
+		759D66AA2A36CDE40073158A /* DinLiveStreamingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLiveStreamingRequest.swift; sourceTree = "<group>"; };
+		759D66AB2A36CDE40073158A /* DinLiveStreamingControl+SettingOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinLiveStreamingControl+SettingOp.swift"; sourceTree = "<group>"; };
+		759D66AC2A36CDE40073158A /* DinLiveStreamingDataCacheControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLiveStreamingDataCacheControl.swift; sourceTree = "<group>"; };
+		759D66AD2A36CDE40073158A /* DinLiveStreamingControl+ActionOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinLiveStreamingControl+ActionOp.swift"; sourceTree = "<group>"; };
+		759D66AE2A36CDE40073158A /* DinLiveStreamingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinLiveStreamingControl.swift; sourceTree = "<group>"; };
+		759D66AF2A36CDE40073158A /* DinCore.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = DinCore.modulemap; sourceTree = "<group>"; };
+		759D66B22A36CDE40073158A /* DinHomeDeviceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHomeDeviceProtocol.swift; sourceTree = "<group>"; };
+		759D66B32A36CDE40073158A /* DinHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHome.swift; sourceTree = "<group>"; };
+		759D66B42A36CDE40073158A /* DinHomeDeviceManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHomeDeviceManagerProtocol.swift; sourceTree = "<group>"; };
+		759D66B52A36CDE40073158A /* DinHomeDeviceSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHomeDeviceSelection.swift; sourceTree = "<group>"; };
+		759D66B62A36CDE40073158A /* DinCore+Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinCore+Home.swift"; sourceTree = "<group>"; };
+		759D66B72A36CDE40073158A /* DinHome+Convenient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinHome+Convenient.swift"; sourceTree = "<group>"; };
+		759D66B92A36CDE40073158A /* DinUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinUser.swift; sourceTree = "<group>"; };
+		759D66BA2A36CDE40073158A /* DinMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinMember.swift; sourceTree = "<group>"; };
+		759D66BB2A36CDE40073158A /* DinHomeContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHomeContact.swift; sourceTree = "<group>"; };
+		759D66BC2A36CDE40073158A /* DinMemberProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinMemberProfile.swift; sourceTree = "<group>"; };
+		759D66BD2A36CDE40073158A /* DinCore+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinCore+User.swift"; sourceTree = "<group>"; };
+		759D66BF2A36CDE40073158A /* DinRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinRequest.swift; sourceTree = "<group>"; };
+		759D66C02A36CDE40073158A /* DinUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinUserRequest.swift; sourceTree = "<group>"; };
+		759D66C12A36CDE40073158A /* DinTuyaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinTuyaRequest.swift; sourceTree = "<group>"; };
+		759D66C22A36CDE40073158A /* DinAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinAuthRequest.swift; sourceTree = "<group>"; };
+		759D66C32A36CDE40073158A /* DinThirdPartyCameraRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinThirdPartyCameraRequest.swift; sourceTree = "<group>"; };
+		759D66C42A36CDE40073158A /* DinQRCodeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinQRCodeRequest.swift; sourceTree = "<group>"; };
+		759D66C52A36CDE40073158A /* DinUploadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinUploadRequest.swift; sourceTree = "<group>"; };
+		759D66C62A36CDE40073158A /* DinHomeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinHomeRequest.swift; sourceTree = "<group>"; };
+		759D66C82A36CDE40073158A /* DinUDPGroupControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinUDPGroupControl.swift; sourceTree = "<group>"; };
+		759D66C92A36CDE40073158A /* DinGroupEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinGroupEncryptor.swift; sourceTree = "<group>"; };
+		759D66CA2A36CDE40073158A /* DinServerEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinServerEncryptor.swift; sourceTree = "<group>"; };
+		759D66CB2A36CDE40073158A /* DinGroupCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinGroupCommunicator.swift; sourceTree = "<group>"; };
+		759D66CC2A36CDE40073158A /* DinUDPGroupControl+Ops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinUDPGroupControl+Ops.swift"; sourceTree = "<group>"; };
+		759D66CD2A36CDE40073158A /* DinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinModel.swift; sourceTree = "<group>"; };
+		759D66CF2A36CDE40073158A /* DinIPCPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinIPCPeripheral.swift; sourceTree = "<group>"; };
+		759D66D02A36CDE40073158A /* DinIPCPeripheral+Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinIPCPeripheral+Command.swift"; sourceTree = "<group>"; };
+		759D66D22A36CDE40073158A /* DinPanelPeripheral+Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DinPanelPeripheral+Command.swift"; sourceTree = "<group>"; };
+		759D66D32A36CDE40073158A /* DinPanelPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinPanelPeripheral.swift; sourceTree = "<group>"; };
+		759D66D52A36CDE40073158A /* CommandSuccessfulResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSuccessfulResponse.swift; sourceTree = "<group>"; };
+		759D66D62A36CDE40073158A /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		759D66D72A36CDE40073158A /* CommandRequestFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandRequestFailure.swift; sourceTree = "<group>"; };
+		759D66D82A36CDE40073158A /* MSCTCommandUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCTCommandUserInfo.swift; sourceTree = "<group>"; };
+		759D66D92A36CDE40073158A /* DinCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCore.swift; sourceTree = "<group>"; };
+		759D66DB2A36CDE40073158A /* DinCameraV006Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraV006Operator.swift; sourceTree = "<group>"; };
+		759D66DC2A36CDE40073158A /* DinCameraV006.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraV006.swift; sourceTree = "<group>"; };
+		759D66DD2A36CDE40073158A /* DinCameraV006Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraV006Manager.swift; sourceTree = "<group>"; };
+		759D66DE2A36CDE40073158A /* DinCoreCameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCoreCameraDelegate.swift; sourceTree = "<group>"; };
+		759D66E02A36CDE40073158A /* DinCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCamera.swift; sourceTree = "<group>"; };
+		759D66E12A36CDE40073158A /* DinCameraOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraOperator.swift; sourceTree = "<group>"; };
+		759D66E22A36CDE40073158A /* DinCameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinCameraManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		759D65B72A36CD050073158A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759D65C12A36CD050073158A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759D65C52A36CD050073158A /* DinCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D9D0D862E27E7FF008469B5 /* R2FileForm */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D0D872E27E806008469B5 /* DinR2FileForm.swift */,
+			);
+			path = R2FileForm;
+			sourceTree = "<group>";
+		};
+		44E104192A39842D00D3B95D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				759D66D92A36CDE40073158A /* DinCore.swift */,
+				759D66552A36CDE40073158A /* DinCoreUserDelegate.swift */,
+				759D66562A36CDE40073158A /* DinCoreHomeDelegate.swift */,
+				759D66722A36CDE40073158A /* DinConstants.swift */,
+				759D66622A36CDE40073158A /* DinCoreStorageBatteryDelegate.swift */,
+				759D66DE2A36CDE40073158A /* DinCoreCameraDelegate.swift */,
+				759D66A42A36CDE40073158A /* DinLiveStreamingKcpObject.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		759D65B02A36CD050073158A = {
+			isa = PBXGroup;
+			children = (
+				759D65BC2A36CD050073158A /* DinCore */,
+				759D65C82A36CD050073158A /* DinCoreTests */,
+				759D65BB2A36CD050073158A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		759D65BB2A36CD050073158A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				759D65BA2A36CD050073158A /* DinCore.framework */,
+				759D65C42A36CD050073158A /* DinCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		759D65BC2A36CD050073158A /* DinCore */ = {
+			isa = PBXGroup;
+			children = (
+				759D65BD2A36CD050073158A /* DinCore.h */,
+				759D65BE2A36CD050073158A /* DinCore.docc */,
+				759D65D42A36CDE30073158A /* Source */,
+			);
+			path = DinCore;
+			sourceTree = "<group>";
+		};
+		759D65C82A36CD050073158A /* DinCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				759D65C92A36CD050073158A /* DinCoreTests.swift */,
+			);
+			path = DinCoreTests;
+			sourceTree = "<group>";
+		};
+		759D65D42A36CDE30073158A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				44E104192A39842D00D3B95D /* Shared */,
+				759D667A2A36CDE40073158A /* Common */,
+				759D66B02A36CDE40073158A /* Model */,
+				759D66D42A36CDE40073158A /* Definitions */,
+				759D65D52A36CDE30073158A /* DataBase */,
+				759D66632A36CDE40073158A /* DinChannel */,
+				759D66732A36CDE40073158A /* DinPeripheral */,
+				759D65D92A36CDE30073158A /* DinBLEPeripheralScanner */,
+				759D66702A36CDE40073158A /* DinBLEPeripheralPool */,
+				759D66AF2A36CDE40073158A /* DinCore.modulemap */,
+				759D66D12A36CDE40073158A /* DinPanelPeripheral */,
+				759D65DE2A36CDE30073158A /* DinNovaPanel */,
+				759D66572A36CDE40073158A /* DinStorageBatteryPeripheral */,
+				759D663D2A36CDE40073158A /* DinStorageBattery */,
+				759D66A12A36CDE40073158A /* DinLiveStreaming */,
+				759D665B2A36CDE40073158A /* DinDoorbellPeripheral */,
+				759D665E2A36CDE40073158A /* DinVideoDoorbell */,
+				759D66CE2A36CDE40073158A /* DinIPCPeripheral */,
+				759D66DF2A36CDE40073158A /* DinCamera */,
+				759D66DA2A36CDE40073158A /* DinCameraV006 */,
+				759D669D2A36CDE40073158A /* DinCameraV015 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		759D65D52A36CDE30073158A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				759D65D62A36CDE30073158A /* DinDataManager+Domain.swift */,
+				759D65D72A36CDE30073158A /* DinDataManager+User.swift */,
+				759D65D82A36CDE30073158A /* DinDataManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		759D65D92A36CDE30073158A /* DinBLEPeripheralScanner */ = {
+			isa = PBXGroup;
+			children = (
+				759D65DA2A36CDE30073158A /* DinScannedBLEPeripheral.swift */,
+				759D65DC2A36CDE30073158A /* DinBLEPeripheralIdentifiable.swift */,
+				759D65DD2A36CDE30073158A /* DinBLEPeripheralScanner.swift */,
+			);
+			path = DinBLEPeripheralScanner;
+			sourceTree = "<group>";
+		};
+		759D65DE2A36CDE30073158A /* DinNovaPanel */ = {
+			isa = PBXGroup;
+			children = (
+				759D65DF2A36CDE30073158A /* Tools */,
+				759D65F92A36CDE30073158A /* Model */,
+				759D66082A36CDE30073158A /* Operator */,
+				759D660C2A36CDE30073158A /* DinNovaPlugin */,
+			);
+			path = DinNovaPanel;
+			sourceTree = "<group>";
+		};
+		759D65DF2A36CDE30073158A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				759D65E02A36CDE30073158A /* DinNovaPanelControl.swift */,
+				759D65E12A36CDE30073158A /* DinNovaPanelEventHandler.swift */,
+				759D65E22A36CDE30073158A /* Websocket */,
+				759D65E92A36CDE30073158A /* DinNovaPanelControl+InfoKey.swift */,
+				759D65EA2A36CDE30073158A /* DinNovaPanelQueueName.swift */,
+				759D65EB2A36CDE30073158A /* Http */,
+				759D65F52A36CDE30073158A /* DinNovaPanelControl+InfoHandler.swift */,
+				759D65F62A36CDE30073158A /* DinNovaPanelOperationInfoHolder.swift */,
+				759D65F72A36CDE30073158A /* CoAP */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		759D65E22A36CDE30073158A /* Websocket */ = {
+			isa = PBXGroup;
+			children = (
+				759D65E32A36CDE30073158A /* DinNovaPanelControl+WSResponseHandler.swift */,
+				759D65E42A36CDE30073158A /* DinWebsocketControl.swift */,
+				759D65E52A36CDE30073158A /* DinNovaPanelSocketResponse.swift */,
+				759D65E62A36CDE30073158A /* DinNovaPanelControl+OtherWSResponseHandler.swift */,
+				759D65E72A36CDE30073158A /* DinNovaPanelControl+WSOperation.swift */,
+				759D65E82A36CDE30073158A /* DinLearnModeWebSocketControl.swift */,
+			);
+			path = Websocket;
+			sourceTree = "<group>";
+		};
+		759D65EB2A36CDE30073158A /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				759D65EC2A36CDE30073158A /* DinNovaPanelControl+HTTPResponseHandler.swift */,
+				759D65ED2A36CDE30073158A /* DinNovaPanelControl+HTTPOperation.swift */,
+				759D65EE2A36CDE30073158A /* DinNovaWidget */,
+				759D65F12A36CDE30073158A /* DinNovaPluginOperationRequest.swift */,
+				759D65F22A36CDE30073158A /* DinNovaPanelRequest.swift */,
+				759D65F32A36CDE30073158A /* DinNovaPluginRequest.swift */,
+				759D65F42A36CDE30073158A /* DinNovaPanelOperationRequest.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		759D65EE2A36CDE30073158A /* DinNovaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				759D65EF2A36CDE30073158A /* DinNovaWidgetRequest.swift */,
+				759D65F02A36CDE30073158A /* DinNovaWidgetRequest+Parameters.swift */,
+			);
+			path = DinNovaWidget;
+			sourceTree = "<group>";
+		};
+		759D65F72A36CDE30073158A /* CoAP */ = {
+			isa = PBXGroup;
+			children = (
+				759D65F82A36CDE30073158A /* DinNovaPanelLANUtil.swift */,
+			);
+			path = CoAP;
+			sourceTree = "<group>";
+		};
+		759D65F92A36CDE30073158A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				759D65FA2A36CDE30073158A /* DinDoorWindowSensor.swift */,
+				759D65FB2A36CDE30073158A /* DinNovaPanelPing.swift */,
+				759D65FC2A36CDE30073158A /* Manager */,
+				759D66002A36CDE30073158A /* DinDeviceTokenModel.swift */,
+				759D66012A36CDE30073158A /* DinCareModeStatus.swift */,
+				759D66022A36CDE30073158A /* OperationResult */,
+				759D66052A36CDE30073158A /* DinSmartPlug.swift */,
+				759D66062A36CDE30073158A /* DinNovaPanel.swift */,
+				759D66072A36CDE30073158A /* DinNovaPanelEvent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		759D65FC2A36CDE30073158A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				759D65FD2A36CDE30073158A /* DinNovaPanelManager.swift */,
+				759D65FE2A36CDE30073158A /* DinNovaPanelManager+PluginResponseHandler.swift */,
+				759D65FF2A36CDE30073158A /* DinNovaPanelManager+Plugin.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		759D66022A36CDE30073158A /* OperationResult */ = {
+			isa = PBXGroup;
+			children = (
+				759D66032A36CDE30073158A /* DinNovaPanelSOSOperationResult.swift */,
+				759D66042A36CDE30073158A /* DinNovaPanelArmOperationResult.swift */,
+			);
+			path = OperationResult;
+			sourceTree = "<group>";
+		};
+		759D66082A36CDE30073158A /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				759D66092A36CDE30073158A /* DinNovaPanelOperator.swift */,
+				759D660A2A36CDE30073158A /* DinNovaPanelOperator+ResponseHandler.swift */,
+				759D660B2A36CDE30073158A /* DinNovaPanelOperator+Operation.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		759D660C2A36CDE30073158A /* DinNovaPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				759D660D2A36CDE30073158A /* Model */,
+			);
+			path = DinNovaPlugin;
+			sourceTree = "<group>";
+		};
+		759D660D2A36CDE30073158A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				759D660E2A36CDE30073158A /* Siren */,
+				759D66132A36CDE30073158A /* DoorSensor */,
+				759D66182A36CDE30073158A /* DinNovaPluginOperationInfoHolder.swift */,
+				759D66192A36CDE30073158A /* DinNovaPlugin.swift */,
+				759D661A2A36CDE30073158A /* DinNovaPluginAdder.swift */,
+				759D661B2A36CDE30073158A /* SmartButton */,
+				759D66202A36CDE30073158A /* Keypad */,
+				759D66252A36CDE30073158A /* DinNovaPluginControl.swift */,
+				759D66262A36CDE30073158A /* DinNovaPluginControl+Operation.swift */,
+				759D66272A36CDE30073158A /* DinNovaPluginOperator.swift */,
+				759D66282A36CDE30073158A /* SecurityAccessory */,
+				759D662D2A36CDE30073158A /* Relay */,
+				759D66322A36CDE30073158A /* RemoteControl */,
+				759D66372A36CDE40073158A /* SmartPlug */,
+				759D663C2A36CDE40073158A /* DinNovaPluginControl+WSResponseHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		759D660E2A36CDE30073158A /* Siren */ = {
+			isa = PBXGroup;
+			children = (
+				759D660F2A36CDE30073158A /* DinNovaSirenControl+Operation.swift */,
+				759D66102A36CDE30073158A /* DinNovaSiren.swift */,
+				759D66112A36CDE30073158A /* DinNovaSirenControl+WSResponseHandler.swift */,
+				759D66122A36CDE30073158A /* DinNovaSirenControl.swift */,
+			);
+			path = Siren;
+			sourceTree = "<group>";
+		};
+		759D66132A36CDE30073158A /* DoorSensor */ = {
+			isa = PBXGroup;
+			children = (
+				759D66142A36CDE30073158A /* DinNovaDoorWindowSensorControl+Operation.swift */,
+				759D66152A36CDE30073158A /* DinNovaDoorWindowSensorControl+WSResponseHandler.swift */,
+				759D66162A36CDE30073158A /* DinNovaDoorWindowSensorControl.swift */,
+				759D66172A36CDE30073158A /* DinNovaDoorWindowSensor.swift */,
+			);
+			path = DoorSensor;
+			sourceTree = "<group>";
+		};
+		759D661B2A36CDE30073158A /* SmartButton */ = {
+			isa = PBXGroup;
+			children = (
+				759D661C2A36CDE30073158A /* DinNovaSmartButton.swift */,
+				759D661D2A36CDE30073158A /* DinNovaSmartButtonControl.swift */,
+				759D661E2A36CDE30073158A /* DinNovaSmartButtonControl+Operation.swift */,
+				759D661F2A36CDE30073158A /* DinNovaSmartButtonControl+WSResponseHandler.swift */,
+			);
+			path = SmartButton;
+			sourceTree = "<group>";
+		};
+		759D66202A36CDE30073158A /* Keypad */ = {
+			isa = PBXGroup;
+			children = (
+				759D66212A36CDE30073158A /* DinNovaKeypad.swift */,
+				759D66222A36CDE30073158A /* DinNovaKeypadControl.swift */,
+				759D66232A36CDE30073158A /* DinNovaKeypadControl+WSResponseHandler.swift */,
+				759D66242A36CDE30073158A /* DinNovaKeypadControl+Operation.swift */,
+			);
+			path = Keypad;
+			sourceTree = "<group>";
+		};
+		759D66282A36CDE30073158A /* SecurityAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				759D66292A36CDE30073158A /* DinNovaSecurityAccessoryControl+Operation.swift */,
+				759D662A2A36CDE30073158A /* DinNovaSecurityAccessoryControl.swift */,
+				759D662B2A36CDE30073158A /* DinNovaSecurityAccessory.swift */,
+				759D662C2A36CDE30073158A /* DinNovaSecurityAccessoryControl+WSResponseHandler.swift */,
+			);
+			path = SecurityAccessory;
+			sourceTree = "<group>";
+		};
+		759D662D2A36CDE30073158A /* Relay */ = {
+			isa = PBXGroup;
+			children = (
+				759D662E2A36CDE30073158A /* DinNovaRelayControl.swift */,
+				759D662F2A36CDE30073158A /* DinNovaRelay.swift */,
+				759D66302A36CDE30073158A /* DinNovaRelayControl+Operation.swift */,
+				759D66312A36CDE30073158A /* DinNovaRelayControl+WSResponseHandler.swift */,
+			);
+			path = Relay;
+			sourceTree = "<group>";
+		};
+		759D66322A36CDE30073158A /* RemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				759D66332A36CDE30073158A /* DinNovaRemoteControlControl+Operation.swift */,
+				759D66342A36CDE30073158A /* DinNovaRemoteControlControl+WSResponseHandler.swift */,
+				759D66352A36CDE40073158A /* DinNovaRemoteControlControl.swift */,
+				759D66362A36CDE40073158A /* DinNovaRemoteControl.swift */,
+			);
+			path = RemoteControl;
+			sourceTree = "<group>";
+		};
+		759D66372A36CDE40073158A /* SmartPlug */ = {
+			isa = PBXGroup;
+			children = (
+				759D66382A36CDE40073158A /* DinNovaSmartPlugControl+WSResponseHandler.swift */,
+				759D66392A36CDE40073158A /* DinNovaSmartPlug.swift */,
+				759D663A2A36CDE40073158A /* DinNovaSmartPlugControl.swift */,
+				759D663B2A36CDE40073158A /* DinNovaSmartPlugControl+Operation.swift */,
+			);
+			path = SmartPlug;
+			sourceTree = "<group>";
+		};
+		759D663D2A36CDE40073158A /* DinStorageBattery */ = {
+			isa = PBXGroup;
+			children = (
+				759D663E2A36CDE40073158A /* DinStorageBatteryOperator.swift */,
+				759D663F2A36CDE40073158A /* DinStorageBatteryControl+UpdateInfo.swift */,
+				759D66402A36CDE40073158A /* DinStorageBatteryRequest+Parameters.swift */,
+				759D66412A36CDE40073158A /* DinStorageBatteryManager.swift */,
+				759D66422A36CDE40073158A /* DinStorageBatteryControl.swift */,
+				759D66432A36CDE40073158A /* DinStorageBatteryHTTPCommand.swift */,
+				759D66442A36CDE40073158A /* DinStorageBatteryMSCTCommand.swift */,
+				759D66452A36CDE40073158A /* DinStorageBatteryPayloadParser.swift */,
+				759D66462A36CDE40073158A /* DinStorageBatteryHP5000 */,
+				759D664B2A36CDE40073158A /* DinStorageBatteryUDPControl.swift */,
+				759D664C2A36CDE40073158A /* DinStorageBattery.swift */,
+				759D664D2A36CDE40073158A /* DinStorageBatteryHP5001 */,
+				759D66522A36CDE40073158A /* DinStorageBatteryRequest.swift */,
+				759D66532A36CDE40073158A /* DinStorageBatteryStatsRequest+Parameter.swift */,
+				759D66542A36CDE40073158A /* DinStorageBatteryStatsRequest.swift */,
+			);
+			path = DinStorageBattery;
+			sourceTree = "<group>";
+		};
+		759D66462A36CDE40073158A /* DinStorageBatteryHP5000 */ = {
+			isa = PBXGroup;
+			children = (
+				759D66472A36CDE40073158A /* DinStorageBatteryHP5000Operator.swift */,
+				759D66482A36CDE40073158A /* DinStorageBatteryHP5000Control.swift */,
+				759D66492A36CDE40073158A /* DinStorageBatteryHP5000Manager.swift */,
+				759D664A2A36CDE40073158A /* DinStorageBatteryHP5000.swift */,
+			);
+			path = DinStorageBatteryHP5000;
+			sourceTree = "<group>";
+		};
+		759D664D2A36CDE40073158A /* DinStorageBatteryHP5001 */ = {
+			isa = PBXGroup;
+			children = (
+				759D664E2A36CDE40073158A /* DinStorageBatteryHP5001Manager.swift */,
+				759D664F2A36CDE40073158A /* DinStorageBatteryHP5001Control.swift */,
+				759D66502A36CDE40073158A /* DinStorageBatteryHP5001.swift */,
+				759D66512A36CDE40073158A /* DinStorageBatteryHP5001Operator.swift */,
+			);
+			path = DinStorageBatteryHP5001;
+			sourceTree = "<group>";
+		};
+		759D66572A36CDE40073158A /* DinStorageBatteryPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				759D66782A36CDE40073158A /* PairStorageBatteryDevice.swift */,
+				759D66582A36CDE40073158A /* DinStorageBatteryPeripheral+Command.swift */,
+				759D66592A36CDE40073158A /* DinStorageBatteryPeripheral.swift */,
+			);
+			path = DinStorageBatteryPeripheral;
+			sourceTree = "<group>";
+		};
+		759D665B2A36CDE40073158A /* DinDoorbellPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				759D66762A36CDE40073158A /* PairDoorbellDevice.swift */,
+				759D665C2A36CDE40073158A /* DinDoorbellPeripheral+Command.swift */,
+				759D665D2A36CDE40073158A /* DinDoorbellPeripheral.swift */,
+			);
+			path = DinDoorbellPeripheral;
+			sourceTree = "<group>";
+		};
+		759D665E2A36CDE40073158A /* DinVideoDoorbell */ = {
+			isa = PBXGroup;
+			children = (
+				759D665F2A36CDE40073158A /* DinVideoDoorbellManager.swift */,
+				759D66602A36CDE40073158A /* DinVideoDoorbell.swift */,
+				759D66612A36CDE40073158A /* DinVideoDoorbellOperator.swift */,
+			);
+			path = DinVideoDoorbell;
+			sourceTree = "<group>";
+		};
+		759D66632A36CDE40073158A /* DinChannel */ = {
+			isa = PBXGroup;
+			children = (
+				759D66642A36CDE40073158A /* DinChannelEncryptor.swift */,
+				759D66652A36CDE40073158A /* DinChannelUDPControl */,
+				759D66682A36CDE40073158A /* DinChannelKcp */,
+				759D666F2A36CDE40073158A /* DinChannelP2PDiscover.swift */,
+			);
+			path = DinChannel;
+			sourceTree = "<group>";
+		};
+		759D66652A36CDE40073158A /* DinChannelUDPControl */ = {
+			isa = PBXGroup;
+			children = (
+				759D66662A36CDE40073158A /* DinChannelUDPControl+Op.swift */,
+				759D66672A36CDE40073158A /* DinChannelUDPControl.swift */,
+			);
+			path = DinChannelUDPControl;
+			sourceTree = "<group>";
+		};
+		759D66682A36CDE40073158A /* DinChannelKcp */ = {
+			isa = PBXGroup;
+			children = (
+				759D66692A36CDE40073158A /* DinChannelKcpObjectFileFetcher.swift */,
+				759D666A2A36CDE40073158A /* DinCameraKcpObjectManager+ResultHandler.swift */,
+				759D666B2A36CDE40073158A /* DinChannelKcpOperation.swift */,
+				759D666C2A36CDE40073158A /* DinCameraKcpObjectManager+Ops.swift */,
+				759D666D2A36CDE40073158A /* DinChannelKcpObjectManager.swift */,
+				759D666E2A36CDE40073158A /* DinChannelKcpOperationManager.swift */,
+			);
+			path = DinChannelKcp;
+			sourceTree = "<group>";
+		};
+		759D66702A36CDE40073158A /* DinBLEPeripheralPool */ = {
+			isa = PBXGroup;
+			children = (
+				759D66712A36CDE40073158A /* DinBLEPeripheralPool.swift */,
+			);
+			path = DinBLEPeripheralPool;
+			sourceTree = "<group>";
+		};
+		759D66732A36CDE40073158A /* DinPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				759D66742A36CDE40073158A /* DinPeripheral.swift */,
+			);
+			path = DinPeripheral;
+			sourceTree = "<group>";
+		};
+		759D667A2A36CDE40073158A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				759D667B2A36CDE40073158A /* Tools */,
+				759D66952A36CDE40073158A /* Libs */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		759D667B2A36CDE40073158A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D0D892E27EE46008469B5 /* DinR2UploadManager.swift */,
+				759D667C2A36CDE40073158A /* EventBus */,
+				759D66812A36CDE40073158A /* Extension */,
+				759D66892A36CDE40073158A /* Network */,
+				759D66912A36CDE40073158A /* DinCoreLogger.swift */,
+				759D66922A36CDE40073158A /* DinQueueName.swift */,
+				759D66932A36CDE40073158A /* DinDeviceScanner.swift */,
+				759D66942A36CDE40073158A /* DinDelay.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		759D667C2A36CDE40073158A /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				759D667D2A36CDE40073158A /* DinEventBusCamera.swift */,
+				759D667E2A36CDE40073158A /* DinEventBusStorageBattery.swift */,
+				759D667F2A36CDE40073158A /* DinEventBus.swift */,
+				759D66802A36CDE40073158A /* DinEventBusBasic.swift */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		759D66812A36CDE40073158A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				759D66822A36CDE40073158A /* Int+Convertion.swift */,
+				759D66832A36CDE40073158A /* UInt8+Convertion.swift */,
+				759D66842A36CDE40073158A /* Collections+DinHomeDeviceProtocol.swift */,
+				759D66852A36CDE40073158A /* FixedWidthInteger+Data.swift */,
+				759D66862A36CDE40073158A /* DinAccessory+Extension.swift */,
+				759D66872A36CDE40073158A /* Data+ASCII.swift */,
+				759D66882A36CDE40073158A /* Data+Integer.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		759D66892A36CDE40073158A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				759D668A2A36CDE40073158A /* DinHttpProvider.swift */,
+				759D668B2A36CDE40073158A /* DinNetworkError.swift */,
+				759D668C2A36CDE40073158A /* DinServer.swift */,
+				759D668D2A36CDE40073158A /* DinHttpParams+Default.swift */,
+				759D668E2A36CDE40073158A /* DinApi.swift */,
+				759D668F2A36CDE40073158A /* DinHttpParams.swift */,
+				759D66902A36CDE40073158A /* DinHttpRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		759D66952A36CDE40073158A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				759D66962A36CDE40073158A /* iCoAP */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		759D66962A36CDE40073158A /* iCoAP */ = {
+			isa = PBXGroup;
+			children = (
+				759D66972A36CDE40073158A /* ICoAPMessage.m */,
+				759D66982A36CDE40073158A /* NSString+hex.m */,
+				759D66992A36CDE40073158A /* ICoAPExchange.m */,
+				759D669A2A36CDE40073158A /* NSString+hex.h */,
+				759D669B2A36CDE40073158A /* ICoAPMessage.h */,
+				759D669C2A36CDE40073158A /* ICoAPExchange.h */,
+			);
+			path = iCoAP;
+			sourceTree = "<group>";
+		};
+		759D669D2A36CDE40073158A /* DinCameraV015 */ = {
+			isa = PBXGroup;
+			children = (
+				759D669E2A36CDE40073158A /* DinCameraV015Operator.swift */,
+				759D669F2A36CDE40073158A /* DinCameraV015.swift */,
+				759D66A02A36CDE40073158A /* DinCameraV015Manager.swift */,
+			);
+			path = DinCameraV015;
+			sourceTree = "<group>";
+		};
+		759D66A12A36CDE40073158A /* DinLiveStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				759D66A22A36CDE40073158A /* DinLiveStreamingRequest+Parameters.swift */,
+				759D66A52A36CDE40073158A /* DinLiveStreaming.swift */,
+				759D66A62A36CDE40073158A /* DinLiveStreamingOperator.swift */,
+				759D66A72A36CDE40073158A /* DinLiveStreamingControl */,
+			);
+			path = DinLiveStreaming;
+			sourceTree = "<group>";
+		};
+		759D66A72A36CDE40073158A /* DinLiveStreamingControl */ = {
+			isa = PBXGroup;
+			children = (
+				759D66A82A36CDE40073158A /* DinLiveStreamingControl+Op.swift */,
+				759D66A92A36CDE40073158A /* DinLiveStreamingControl+KCPObjectDelegate.swift */,
+				759D66AA2A36CDE40073158A /* DinLiveStreamingRequest.swift */,
+				759D66AB2A36CDE40073158A /* DinLiveStreamingControl+SettingOp.swift */,
+				759D66AC2A36CDE40073158A /* DinLiveStreamingDataCacheControl.swift */,
+				759D66AD2A36CDE40073158A /* DinLiveStreamingControl+ActionOp.swift */,
+				759D66AE2A36CDE40073158A /* DinLiveStreamingControl.swift */,
+			);
+			path = DinLiveStreamingControl;
+			sourceTree = "<group>";
+		};
+		759D66B02A36CDE40073158A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D0D862E27E7FF008469B5 /* R2FileForm */,
+				759D66B12A36CDE40073158A /* Home */,
+				759D66B82A36CDE40073158A /* User */,
+				759D66BE2A36CDE40073158A /* Api */,
+				759D66C72A36CDE40073158A /* MSCT */,
+				759D66CD2A36CDE40073158A /* DinModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		759D66B12A36CDE40073158A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				759D66B22A36CDE40073158A /* DinHomeDeviceProtocol.swift */,
+				759D66B32A36CDE40073158A /* DinHome.swift */,
+				759D66B42A36CDE40073158A /* DinHomeDeviceManagerProtocol.swift */,
+				759D66B52A36CDE40073158A /* DinHomeDeviceSelection.swift */,
+				759D66B62A36CDE40073158A /* DinCore+Home.swift */,
+				759D66B72A36CDE40073158A /* DinHome+Convenient.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		759D66B82A36CDE40073158A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				759D66B92A36CDE40073158A /* DinUser.swift */,
+				759D66BA2A36CDE40073158A /* DinMember.swift */,
+				759D66BB2A36CDE40073158A /* DinHomeContact.swift */,
+				759D66BC2A36CDE40073158A /* DinMemberProfile.swift */,
+				759D66BD2A36CDE40073158A /* DinCore+User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		759D66BE2A36CDE40073158A /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D0D842E27E49A008469B5 /* DinR2UploadRequest.swift */,
+				759D66BF2A36CDE40073158A /* DinRequest.swift */,
+				759D66C02A36CDE40073158A /* DinUserRequest.swift */,
+				759D66C12A36CDE40073158A /* DinTuyaRequest.swift */,
+				759D66C22A36CDE40073158A /* DinAuthRequest.swift */,
+				759D66C32A36CDE40073158A /* DinThirdPartyCameraRequest.swift */,
+				759D66C42A36CDE40073158A /* DinQRCodeRequest.swift */,
+				759D66C52A36CDE40073158A /* DinUploadRequest.swift */,
+				759D66C62A36CDE40073158A /* DinHomeRequest.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		759D66C72A36CDE40073158A /* MSCT */ = {
+			isa = PBXGroup;
+			children = (
+				759D66C82A36CDE40073158A /* DinUDPGroupControl.swift */,
+				759D66C92A36CDE40073158A /* DinGroupEncryptor.swift */,
+				759D66CA2A36CDE40073158A /* DinServerEncryptor.swift */,
+				759D66CB2A36CDE40073158A /* DinGroupCommunicator.swift */,
+				759D66CC2A36CDE40073158A /* DinUDPGroupControl+Ops.swift */,
+			);
+			path = MSCT;
+			sourceTree = "<group>";
+		};
+		759D66CE2A36CDE40073158A /* DinIPCPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				759D66772A36CDE40073158A /* PairIPCDevice.swift */,
+				759D66CF2A36CDE40073158A /* DinIPCPeripheral.swift */,
+				759D66D02A36CDE40073158A /* DinIPCPeripheral+Command.swift */,
+			);
+			path = DinIPCPeripheral;
+			sourceTree = "<group>";
+		};
+		759D66D12A36CDE40073158A /* DinPanelPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				759D66792A36CDE40073158A /* PairPanelDevice.swift */,
+				759D66D22A36CDE40073158A /* DinPanelPeripheral+Command.swift */,
+				759D66D32A36CDE40073158A /* DinPanelPeripheral.swift */,
+			);
+			path = DinPanelPeripheral;
+			sourceTree = "<group>";
+		};
+		759D66D42A36CDE40073158A /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				759D66D52A36CDE40073158A /* CommandSuccessfulResponse.swift */,
+				759D66D62A36CDE40073158A /* Command.swift */,
+				759D66D72A36CDE40073158A /* CommandRequestFailure.swift */,
+				759D66D82A36CDE40073158A /* MSCTCommandUserInfo.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		759D66DA2A36CDE40073158A /* DinCameraV006 */ = {
+			isa = PBXGroup;
+			children = (
+				759D66DB2A36CDE40073158A /* DinCameraV006Operator.swift */,
+				759D66DC2A36CDE40073158A /* DinCameraV006.swift */,
+				759D66DD2A36CDE40073158A /* DinCameraV006Manager.swift */,
+			);
+			path = DinCameraV006;
+			sourceTree = "<group>";
+		};
+		759D66DF2A36CDE40073158A /* DinCamera */ = {
+			isa = PBXGroup;
+			children = (
+				759D66E02A36CDE40073158A /* DinCamera.swift */,
+				759D66E12A36CDE40073158A /* DinCameraOperator.swift */,
+				759D66E22A36CDE40073158A /* DinCameraManager.swift */,
+			);
+			path = DinCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		759D65B52A36CD050073158A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759D67812A36CDE40073158A /* ICoAPExchange.h in Headers */,
+				759D677F2A36CDE40073158A /* NSString+hex.h in Headers */,
+				759D65CB2A36CD050073158A /* DinCore.h in Headers */,
+				759D67802A36CDE40073158A /* ICoAPMessage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		759D65B92A36CD050073158A /* DinCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759D65CE2A36CD050073158A /* Build configuration list for PBXNativeTarget "DinCore" */;
+			buildPhases = (
+				759D65B52A36CD050073158A /* Headers */,
+				759D65B62A36CD050073158A /* Sources */,
+				759D65B72A36CD050073158A /* Frameworks */,
+				759D65B82A36CD050073158A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinCore;
+			productName = DinCore;
+			productReference = 759D65BA2A36CD050073158A /* DinCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		759D65C32A36CD050073158A /* DinCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759D65D12A36CD050073158A /* Build configuration list for PBXNativeTarget "DinCoreTests" */;
+			buildPhases = (
+				759D65C02A36CD050073158A /* Sources */,
+				759D65C12A36CD050073158A /* Frameworks */,
+				759D65C22A36CD050073158A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				759D65C72A36CD050073158A /* PBXTargetDependency */,
+			);
+			name = DinCoreTests;
+			productName = DinCoreTests;
+			productReference = 759D65C42A36CD050073158A /* DinCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		759D65B12A36CD050073158A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					759D65B92A36CD050073158A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					759D65C32A36CD050073158A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 759D65B42A36CD050073158A /* Build configuration list for PBXProject "DinCore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 759D65B02A36CD050073158A;
+			productRefGroup = 759D65BB2A36CD050073158A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				759D65B92A36CD050073158A /* DinCore */,
+				759D65C32A36CD050073158A /* DinCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		759D65B82A36CD050073158A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759D65C22A36CD050073158A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		759D65B62A36CD050073158A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759D66F42A36CDE40073158A /* DinNovaPanelControl+HTTPResponseHandler.swift in Sources */,
+				759D678D2A36CDE40073158A /* DinLiveStreamingControl+SettingOp.swift in Sources */,
+				759D67152A36CDE40073158A /* DinNovaDoorWindowSensor.swift in Sources */,
+				759D676A2A36CDE40073158A /* Int+Convertion.swift in Sources */,
+				759D670E2A36CDE40073158A /* DinNovaSirenControl+Operation.swift in Sources */,
+				759D65BF2A36CD050073158A /* DinCore.docc in Sources */,
+				759D67762A36CDE40073158A /* DinHttpParams.swift in Sources */,
+				759D66E32A36CDE40073158A /* DinDataManager+Domain.swift in Sources */,
+				759D67872A36CDE40073158A /* DinLiveStreamingKcpObject.swift in Sources */,
+				759D66FE2A36CDE40073158A /* DinNovaPanelLANUtil.swift in Sources */,
+				759D672B2A36CDE40073158A /* DinNovaRelayControl+WSResponseHandler.swift in Sources */,
+				759D67512A36CDE40073158A /* DinVideoDoorbellManager.swift in Sources */,
+				759D676D2A36CDE40073158A /* FixedWidthInteger+Data.swift in Sources */,
+				759D67A02A36CDE40073158A /* DinThirdPartyCameraRequest.swift in Sources */,
+				759D66F92A36CDE40073158A /* DinNovaPanelRequest.swift in Sources */,
+				759D67552A36CDE40073158A /* DinChannelEncryptor.swift in Sources */,
+				759D670F2A36CDE40073158A /* DinNovaSiren.swift in Sources */,
+				759D67B82A36CDE40073158A /* DinCameraOperator.swift in Sources */,
+				759D67982A36CDE40073158A /* DinMember.swift in Sources */,
+				759D670B2A36CDE40073158A /* DinNovaPanelOperator.swift in Sources */,
+				759D67932A36CDE40073158A /* DinHomeDeviceManagerProtocol.swift in Sources */,
+				759D67602A36CDE40073158A /* DinConstants.swift in Sources */,
+				759D67A52A36CDE40073158A /* DinGroupEncryptor.swift in Sources */,
+				759D67A12A36CDE40073158A /* DinQRCodeRequest.swift in Sources */,
+				759D673A2A36CDE40073158A /* DinStorageBatteryHTTPCommand.swift in Sources */,
+				759D67272A36CDE40073158A /* DinNovaSecurityAccessoryControl+WSResponseHandler.swift in Sources */,
+				759D66F12A36CDE40073158A /* DinLearnModeWebSocketControl.swift in Sources */,
+				759D66FD2A36CDE40073158A /* DinNovaPanelOperationInfoHolder.swift in Sources */,
+				759D671E2A36CDE40073158A /* DinNovaKeypadControl.swift in Sources */,
+				759D67782A36CDE40073158A /* DinCoreLogger.swift in Sources */,
+				759D67672A36CDE40073158A /* DinEventBusStorageBattery.swift in Sources */,
+				759D67142A36CDE40073158A /* DinNovaDoorWindowSensorControl.swift in Sources */,
+				759D66FB2A36CDE40073158A /* DinNovaPanelOperationRequest.swift in Sources */,
+				759D67612A36CDE40073158A /* DinPeripheral.swift in Sources */,
+				759D67302A36CDE40073158A /* DinNovaSmartPlugControl+WSResponseHandler.swift in Sources */,
+				759D67772A36CDE40073158A /* DinHttpRequest.swift in Sources */,
+				759D67952A36CDE40073158A /* DinCore+Home.swift in Sources */,
+				759D67412A36CDE40073158A /* DinStorageBatteryUDPControl.swift in Sources */,
+				759D67AD2A36CDE40073158A /* DinPanelPeripheral.swift in Sources */,
+				759D67942A36CDE40073158A /* DinHomeDeviceSelection.swift in Sources */,
+				759D66E42A36CDE40073158A /* DinDataManager+User.swift in Sources */,
+				759D67692A36CDE40073158A /* DinEventBusBasic.swift in Sources */,
+				759D67AB2A36CDE40073158A /* DinIPCPeripheral+Command.swift in Sources */,
+				759D67292A36CDE40073158A /* DinNovaRelay.swift in Sources */,
+				759D67132A36CDE40073158A /* DinNovaDoorWindowSensorControl+WSResponseHandler.swift in Sources */,
+				759D679F2A36CDE40073158A /* DinAuthRequest.swift in Sources */,
+				759D67572A36CDE40073158A /* DinChannelUDPControl.swift in Sources */,
+				759D67912A36CDE40073158A /* DinHomeDeviceProtocol.swift in Sources */,
+				759D672C2A36CDE40073158A /* DinNovaRemoteControlControl+Operation.swift in Sources */,
+				759D66EB2A36CDE40073158A /* DinNovaPanelEventHandler.swift in Sources */,
+				759D67B02A36CDE40073158A /* CommandRequestFailure.swift in Sources */,
+				759D67542A36CDE40073158A /* DinCoreStorageBatteryDelegate.swift in Sources */,
+				759D67422A36CDE40073158A /* DinStorageBattery.swift in Sources */,
+				759D674F2A36CDE40073158A /* DinDoorbellPeripheral+Command.swift in Sources */,
+				759D67902A36CDE40073158A /* DinLiveStreamingControl.swift in Sources */,
+				0D9D0D882E27E80E008469B5 /* DinR2FileForm.swift in Sources */,
+				759D66FF2A36CDE40073158A /* DinDoorWindowSensor.swift in Sources */,
+				759D67B72A36CDE40073158A /* DinCamera.swift in Sources */,
+				0D9D0D852E27E4B6008469B5 /* DinR2UploadRequest.swift in Sources */,
+				759D67342A36CDE40073158A /* DinNovaPluginControl+WSResponseHandler.swift in Sources */,
+				759D67AA2A36CDE40073158A /* DinIPCPeripheral.swift in Sources */,
+				759D67B62A36CDE40073158A /* DinCoreCameraDelegate.swift in Sources */,
+				759D67922A36CDE40073158A /* DinHome.swift in Sources */,
+				759D67852A36CDE40073158A /* DinLiveStreamingRequest+Parameters.swift in Sources */,
+				759D673E2A36CDE40073158A /* DinStorageBatteryHP5000Control.swift in Sources */,
+				759D67A92A36CDE40073158A /* DinModel.swift in Sources */,
+				759D676C2A36CDE40073158A /* Collections+DinHomeDeviceProtocol.swift in Sources */,
+				759D677C2A36CDE40073158A /* ICoAPMessage.m in Sources */,
+				759D67472A36CDE40073158A /* DinStorageBatteryRequest.swift in Sources */,
+				759D67532A36CDE40073158A /* DinVideoDoorbellOperator.swift in Sources */,
+				759D675E2A36CDE40073158A /* DinChannelP2PDiscover.swift in Sources */,
+				759D675D2A36CDE40073158A /* DinChannelKcpOperationManager.swift in Sources */,
+				759D67452A36CDE40073158A /* DinStorageBatteryHP5001.swift in Sources */,
+				759D67172A36CDE40073158A /* DinNovaPlugin.swift in Sources */,
+				759D67092A36CDE40073158A /* DinNovaPanel.swift in Sources */,
+				759D67972A36CDE40073158A /* DinUser.swift in Sources */,
+				759D67892A36CDE40073158A /* DinLiveStreamingOperator.swift in Sources */,
+				759D677A2A36CDE40073158A /* DinDeviceScanner.swift in Sources */,
+				759D670D2A36CDE40073158A /* DinNovaPanelOperator+Operation.swift in Sources */,
+				759D67742A36CDE40073158A /* DinHttpParams+Default.swift in Sources */,
+				759D67562A36CDE40073158A /* DinChannelUDPControl+Op.swift in Sources */,
+				759D671B2A36CDE40073158A /* DinNovaSmartButtonControl+Operation.swift in Sources */,
+				759D67B92A36CDE40073158A /* DinCameraManager.swift in Sources */,
+				759D67B42A36CDE40073158A /* DinCameraV006.swift in Sources */,
+				759D678B2A36CDE40073158A /* DinLiveStreamingControl+KCPObjectDelegate.swift in Sources */,
+				759D67752A36CDE40073158A /* DinApi.swift in Sources */,
+				759D67392A36CDE40073158A /* DinStorageBatteryControl.swift in Sources */,
+				759D671F2A36CDE40073158A /* DinNovaKeypadControl+WSResponseHandler.swift in Sources */,
+				759D67AC2A36CDE40073158A /* DinPanelPeripheral+Command.swift in Sources */,
+				759D67AE2A36CDE40073158A /* CommandSuccessfulResponse.swift in Sources */,
+				759D673D2A36CDE40073158A /* DinStorageBatteryHP5000Operator.swift in Sources */,
+				759D67732A36CDE40073158A /* DinServer.swift in Sources */,
+				759D67192A36CDE40073158A /* DinNovaSmartButton.swift in Sources */,
+				759D66EA2A36CDE40073158A /* DinNovaPanelControl.swift in Sources */,
+				759D67842A36CDE40073158A /* DinCameraV015Manager.swift in Sources */,
+				759D66F62A36CDE40073158A /* DinNovaWidgetRequest.swift in Sources */,
+				759D67962A36CDE40073158A /* DinHome+Convenient.swift in Sources */,
+				759D67722A36CDE40073158A /* DinNetworkError.swift in Sources */,
+				759D67012A36CDE40073158A /* DinNovaPanelManager.swift in Sources */,
+				759D679B2A36CDE40073158A /* DinCore+User.swift in Sources */,
+				759D678E2A36CDE40073158A /* DinLiveStreamingDataCacheControl.swift in Sources */,
+				759D675B2A36CDE40073158A /* DinCameraKcpObjectManager+Ops.swift in Sources */,
+				759D67252A36CDE40073158A /* DinNovaSecurityAccessoryControl.swift in Sources */,
+				759D67832A36CDE40073158A /* DinCameraV015.swift in Sources */,
+				759D672F2A36CDE40073158A /* DinNovaRemoteControl.swift in Sources */,
+				759D671C2A36CDE40073158A /* DinNovaSmartButtonControl+WSResponseHandler.swift in Sources */,
+				759D675C2A36CDE40073158A /* DinChannelKcpObjectManager.swift in Sources */,
+				759D678C2A36CDE40073158A /* DinLiveStreamingRequest.swift in Sources */,
+				759D67992A36CDE40073158A /* DinHomeContact.swift in Sources */,
+				759D67822A36CDE40073158A /* DinCameraV015Operator.swift in Sources */,
+				759D66F02A36CDE40073158A /* DinNovaPanelControl+WSOperation.swift in Sources */,
+				759D67502A36CDE40073158A /* DinDoorbellPeripheral.swift in Sources */,
+				759D66FC2A36CDE40073158A /* DinNovaPanelControl+InfoHandler.swift in Sources */,
+				759D67022A36CDE40073158A /* DinNovaPanelManager+PluginResponseHandler.swift in Sources */,
+				759D676E2A36CDE40073158A /* DinAccessory+Extension.swift in Sources */,
+				759D67A42A36CDE40073158A /* DinUDPGroupControl.swift in Sources */,
+				759D677D2A36CDE40073158A /* NSString+hex.m in Sources */,
+				759D673C2A36CDE40073158A /* DinStorageBatteryPayloadParser.swift in Sources */,
+				759D67682A36CDE40073158A /* DinEventBus.swift in Sources */,
+				759D67712A36CDE40073158A /* DinHttpProvider.swift in Sources */,
+				759D67492A36CDE40073158A /* DinStorageBatteryStatsRequest.swift in Sources */,
+				759D678F2A36CDE40073158A /* DinLiveStreamingControl+ActionOp.swift in Sources */,
+				759D67032A36CDE40073158A /* DinNovaPanelManager+Plugin.swift in Sources */,
+				759D67222A36CDE40073158A /* DinNovaPluginControl+Operation.swift in Sources */,
+				759D674A2A36CDE40073158A /* DinCoreUserDelegate.swift in Sources */,
+				759D67A32A36CDE40073158A /* DinHomeRequest.swift in Sources */,
+				759D67622A36CDE40073158A /* PairDoorbellDevice.swift in Sources */,
+				759D67B52A36CDE40073158A /* DinCameraV006Manager.swift in Sources */,
+				759D67632A36CDE40073158A /* PairIPCDevice.swift in Sources */,
+				759D67242A36CDE40073158A /* DinNovaSecurityAccessoryControl+Operation.swift in Sources */,
+				759D67702A36CDE40073158A /* Data+Integer.swift in Sources */,
+				759D67882A36CDE40073158A /* DinLiveStreaming.swift in Sources */,
+				759D67372A36CDE40073158A /* DinStorageBatteryRequest+Parameters.swift in Sources */,
+				759D67182A36CDE40073158A /* DinNovaPluginAdder.swift in Sources */,
+				759D67A72A36CDE40073158A /* DinGroupCommunicator.swift in Sources */,
+				759D679A2A36CDE40073158A /* DinMemberProfile.swift in Sources */,
+				759D670C2A36CDE40073158A /* DinNovaPanelOperator+ResponseHandler.swift in Sources */,
+				759D67062A36CDE40073158A /* DinNovaPanelSOSOperationResult.swift in Sources */,
+				759D67332A36CDE40073158A /* DinNovaSmartPlugControl+Operation.swift in Sources */,
+				759D67282A36CDE40073158A /* DinNovaRelayControl.swift in Sources */,
+				759D66EE2A36CDE40073158A /* DinNovaPanelSocketResponse.swift in Sources */,
+				759D675F2A36CDE40073158A /* DinBLEPeripheralPool.swift in Sources */,
+				759D671D2A36CDE40073158A /* DinNovaKeypad.swift in Sources */,
+				759D67122A36CDE40073158A /* DinNovaDoorWindowSensorControl+Operation.swift in Sources */,
+				759D673B2A36CDE40073158A /* DinStorageBatteryMSCTCommand.swift in Sources */,
+				759D674C2A36CDE40073158A /* DinStorageBatteryPeripheral+Command.swift in Sources */,
+				0D9D0D8A2E27EE4E008469B5 /* DinR2UploadManager.swift in Sources */,
+				759D67522A36CDE40073158A /* DinVideoDoorbell.swift in Sources */,
+				759D67462A36CDE40073158A /* DinStorageBatteryHP5001Operator.swift in Sources */,
+				759D67A82A36CDE40073158A /* DinUDPGroupControl+Ops.swift in Sources */,
+				759D66FA2A36CDE40073158A /* DinNovaPluginRequest.swift in Sources */,
+				759D66EF2A36CDE40073158A /* DinNovaPanelControl+OtherWSResponseHandler.swift in Sources */,
+				759D67232A36CDE40073158A /* DinNovaPluginOperator.swift in Sources */,
+				759D679D2A36CDE40073158A /* DinUserRequest.swift in Sources */,
+				759D66E92A36CDE40073158A /* DinBLEPeripheralScanner.swift in Sources */,
+				759D67642A36CDE40073158A /* PairStorageBatteryDevice.swift in Sources */,
+				759D67482A36CDE40073158A /* DinStorageBatteryStatsRequest+Parameter.swift in Sources */,
+				759D673F2A36CDE40073158A /* DinStorageBatteryHP5000Manager.swift in Sources */,
+				759D67432A36CDE40073158A /* DinStorageBatteryHP5001Manager.swift in Sources */,
+				759D676F2A36CDE40073158A /* Data+ASCII.swift in Sources */,
+				759D671A2A36CDE40073158A /* DinNovaSmartButtonControl.swift in Sources */,
+				759D677B2A36CDE40073158A /* DinDelay.swift in Sources */,
+				759D66F22A36CDE40073158A /* DinNovaPanelControl+InfoKey.swift in Sources */,
+				759D67592A36CDE40073158A /* DinCameraKcpObjectManager+ResultHandler.swift in Sources */,
+				759D67082A36CDE40073158A /* DinSmartPlug.swift in Sources */,
+				759D66E52A36CDE40073158A /* DinDataManager.swift in Sources */,
+				759D66F82A36CDE40073158A /* DinNovaPluginOperationRequest.swift in Sources */,
+				759D67662A36CDE40073158A /* DinEventBusCamera.swift in Sources */,
+				759D676B2A36CDE40073158A /* UInt8+Convertion.swift in Sources */,
+				759D66F72A36CDE40073158A /* DinNovaWidgetRequest+Parameters.swift in Sources */,
+				759D672A2A36CDE40073158A /* DinNovaRelayControl+Operation.swift in Sources */,
+				759D67382A36CDE40073158A /* DinStorageBatteryManager.swift in Sources */,
+				759D66F52A36CDE40073158A /* DinNovaPanelControl+HTTPOperation.swift in Sources */,
+				759D67042A36CDE40073158A /* DinDeviceTokenModel.swift in Sources */,
+				759D67202A36CDE40073158A /* DinNovaKeypadControl+Operation.swift in Sources */,
+				759D679C2A36CDE40073158A /* DinRequest.swift in Sources */,
+				759D67A62A36CDE40073158A /* DinServerEncryptor.swift in Sources */,
+				759D67112A36CDE40073158A /* DinNovaSirenControl.swift in Sources */,
+				759D674D2A36CDE40073158A /* DinStorageBatteryPeripheral.swift in Sources */,
+				759D67792A36CDE40073158A /* DinQueueName.swift in Sources */,
+				759D67322A36CDE40073158A /* DinNovaSmartPlugControl.swift in Sources */,
+				759D67212A36CDE40073158A /* DinNovaPluginControl.swift in Sources */,
+				759D67A22A36CDE40073158A /* DinUploadRequest.swift in Sources */,
+				759D67052A36CDE40073158A /* DinCareModeStatus.swift in Sources */,
+				759D66E62A36CDE40073158A /* DinScannedBLEPeripheral.swift in Sources */,
+				759D67072A36CDE40073158A /* DinNovaPanelArmOperationResult.swift in Sources */,
+				759D67B32A36CDE40073158A /* DinCameraV006Operator.swift in Sources */,
+				759D67162A36CDE40073158A /* DinNovaPluginOperationInfoHolder.swift in Sources */,
+				759D66E82A36CDE40073158A /* DinBLEPeripheralIdentifiable.swift in Sources */,
+				759D670A2A36CDE40073158A /* DinNovaPanelEvent.swift in Sources */,
+				759D674B2A36CDE40073158A /* DinCoreHomeDelegate.swift in Sources */,
+				759D67362A36CDE40073158A /* DinStorageBatteryControl+UpdateInfo.swift in Sources */,
+				759D67402A36CDE40073158A /* DinStorageBatteryHP5000.swift in Sources */,
+				759D66EC2A36CDE40073158A /* DinNovaPanelControl+WSResponseHandler.swift in Sources */,
+				759D66ED2A36CDE40073158A /* DinWebsocketControl.swift in Sources */,
+				759D67262A36CDE40073158A /* DinNovaSecurityAccessory.swift in Sources */,
+				759D66F32A36CDE40073158A /* DinNovaPanelQueueName.swift in Sources */,
+				759D67B22A36CDE40073158A /* DinCore.swift in Sources */,
+				759D672D2A36CDE40073158A /* DinNovaRemoteControlControl+WSResponseHandler.swift in Sources */,
+				759D672E2A36CDE40073158A /* DinNovaRemoteControlControl.swift in Sources */,
+				759D67652A36CDE40073158A /* PairPanelDevice.swift in Sources */,
+				759D67102A36CDE40073158A /* DinNovaSirenControl+WSResponseHandler.swift in Sources */,
+				759D67AF2A36CDE40073158A /* Command.swift in Sources */,
+				759D67442A36CDE40073158A /* DinStorageBatteryHP5001Control.swift in Sources */,
+				759D67352A36CDE40073158A /* DinStorageBatteryOperator.swift in Sources */,
+				759D677E2A36CDE40073158A /* ICoAPExchange.m in Sources */,
+				759D67002A36CDE40073158A /* DinNovaPanelPing.swift in Sources */,
+				759D678A2A36CDE40073158A /* DinLiveStreamingControl+Op.swift in Sources */,
+				759D67312A36CDE40073158A /* DinNovaSmartPlug.swift in Sources */,
+				759D67582A36CDE40073158A /* DinChannelKcpObjectFileFetcher.swift in Sources */,
+				759D679E2A36CDE40073158A /* DinTuyaRequest.swift in Sources */,
+				759D675A2A36CDE40073158A /* DinChannelKcpOperation.swift in Sources */,
+				759D67B12A36CDE40073158A /* MSCTCommandUserInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759D65C02A36CD050073158A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759D65CA2A36CD050073158A /* DinCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		759D65C72A36CD050073158A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 759D65B92A36CD050073158A /* DinCore */;
+			targetProxy = 759D65C62A36CD050073158A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		759D65CC2A36CD050073158A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		759D65CD2A36CD050073158A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		759D65CF2A36CD050073158A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(SRCROOT)/DinCore/Source/DinCore.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759D65D02A36CD050073158A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(SRCROOT)/DinCore/Source/DinCore.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		759D65D22A36CD050073158A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759D65D32A36CD050073158A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinsafe.DinCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		759D65B42A36CD050073158A /* Build configuration list for PBXProject "DinCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759D65CC2A36CD050073158A /* Debug */,
+				759D65CD2A36CD050073158A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759D65CE2A36CD050073158A /* Build configuration list for PBXNativeTarget "DinCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759D65CF2A36CD050073158A /* Debug */,
+				759D65D02A36CD050073158A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759D65D12A36CD050073158A /* Build configuration list for PBXNativeTarget "DinCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759D65D22A36CD050073158A /* Debug */,
+				759D65D32A36CD050073158A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 759D65B12A36CD050073158A /* Project object */;
+}

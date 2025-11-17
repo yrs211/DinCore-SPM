@@ -1,0 +1,158 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "alicloudhttpdns-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yrs211/AlicloudHttpDNS-SPM.git",
+      "state" : {
+        "revision" : "141f912b0f804e200a51e04faa0a21770c8bbf44",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "cocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/CocoaAsyncSocket.git",
+      "state" : {
+        "revision" : "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
+        "version" : "7.6.5"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift",
+      "state" : {
+        "revision" : "729e01bc9b9dab466ac85f21fb9ee2bc1c61b258",
+        "version" : "1.8.4"
+      }
+    },
+    {
+      "identity" : "dinsupport-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yrs211/DinSupport-SPM.git",
+      "state" : {
+        "revision" : "5b4d61b0c1d9fcd11b4127c22845b89556ea9ca4",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "handyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alibaba/HandyJSON.git",
+      "state" : {
+        "revision" : "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
+        "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "happy-dns-objc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/qiniu/happy-dns-objc",
+      "state" : {
+        "revision" : "17039cf075bbee358dfb77ed1b5e437736768692",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "leveldb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/firebase/leveldb.git",
+      "state" : {
+        "revision" : "a0bc79961d7be727d258d33d5a6b2f1023270ba1",
+        "version" : "1.22.5"
+      }
+    },
+    {
+      "identity" : "moya",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moya/Moya.git",
+      "state" : {
+        "revision" : "9b906860e3c3c09032879465c471e6375829593f",
+        "version" : "15.0.0"
+      }
+    },
+    {
+      "identity" : "objc-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/qiniu/objc-sdk",
+      "state" : {
+        "revision" : "1df2273a2287a25dadcfe09d55b7239d4cca5e6f",
+        "version" : "8.8.1"
+      }
+    },
+    {
+      "identity" : "objective-leveldb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yrs211/Objective-LevelDB.git",
+      "state" : {
+        "revision" : "a73c8d0410ffcc36478d9a94b907cbab7230ec27",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
+        "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "snappy-objc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yrs211/Snappy-ObjC.git",
+      "state" : {
+        "revision" : "c6f961f9d30e06213686b5ff71a021911e07eff8",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "e6b65c6d9077ea48b4a7bdda8994a1d3c6969c8d",
+        "version" : "3.1.1"
+      }
+    },
+    {
+      "identity" : "swift-nio-zlib-support",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-nio-zlib-support.git",
+      "state" : {
+        "revision" : "37760e9a52030bb9011972c5213c3350fa9d41fd",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "ziparchive",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ZipArchive/ZipArchive.git",
+      "state" : {
+        "revision" : "38e0ce0598e06b034271f296a8e15b149c91aa19",
+        "version" : "2.4.3"
+      }
+    }
+  ],
+  "version" : 2
+}

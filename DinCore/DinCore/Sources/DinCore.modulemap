@@ -1,0 +1,22 @@
+//
+//  module.modulemap
+//  DinCore
+//
+//  Created by Jin on 2021/5/13.
+//
+framework module DinCore {
+  umbrella header "DinCore.h"
+
+  module ICoAPExchange {
+      header "ICoAPExchange.h"
+      export *
+  }
+
+  module ICoAPMessage {
+      header "ICoAPMessage.h"
+      export *
+  }
+
+  export *
+  module * { export * }
+}
