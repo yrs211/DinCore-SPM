@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/yrs211/Objective-LevelDB.git",
       "state" : {
-        "revision" : "a73c8d0410ffcc36478d9a94b907cbab7230ec27",
-        "version" : "1.0.2"
+        "revision" : "4ca7ffa66378ddf681a89c1b6517aea8a294d5a4",
+        "version" : "1.0.4"
       }
     },
     {
