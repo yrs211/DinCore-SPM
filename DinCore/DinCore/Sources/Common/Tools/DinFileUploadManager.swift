@@ -6,6 +6,8 @@
 //
 
 import Alamofire
+import ObjectiveC
+import Foundation
 
 public class DinFileUploadManager: NSObject {
     

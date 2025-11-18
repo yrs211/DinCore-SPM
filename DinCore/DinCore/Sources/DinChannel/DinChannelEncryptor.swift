@@ -71,23 +71,23 @@ public class DinChannelEncryptor: NSObject, DinCommunicationEncryptor {
 extension DinChannelEncryptor {
     /// MSCT加密
     private func encryptData(with requestData: Data) -> Data? {
-        return msctCryptor?.aesEncrypt(bytes: requestData.bytes)?.data
+        return msctCryptor?.aesEncrypt(bytes: requestData.dataBytes)?.data
     }
     /// MSCT解密
     private func decryptData(_ responseData: Data, withMSCTHeaders msctHeaders: [UInt8 : OptionHeader]?) -> Data? {
-        if let ivBytes = msctHeaders?[DinMSCTOptionID.aesIV]?.data?.bytes {
+        if let ivBytes = msctHeaders?[DinMSCTOptionID.aesIV]?.data?.dataBytes {
             let tempCryptor = DinsaferAESCBCCryptor(withSecret: self.secretBytes, iv: ivBytes)
-            return tempCryptor?.aesDecrypt(bytes: responseData.bytes)?.data
+            return tempCryptor?.aesDecrypt(bytes: responseData.dataBytes)?.data
         }
         return nil
     }
 
     /// KCP加密
     private func encryptKCPData(with requestData: Data) -> Data? {
-        return kcpCrytor?.aesEncrypt(bytes: requestData.bytes)?.data
+        return kcpCrytor?.aesEncrypt(bytes: requestData.dataBytes)?.data
     }
     /// KCP解密
     private func decryptKCPData(_ responseData: Data) -> Data? {
-        return kcpCrytor?.aesDecrypt(bytes: responseData.bytes)?.data
+        return kcpCrytor?.aesDecrypt(bytes: responseData.dataBytes)?.data
     }
 }

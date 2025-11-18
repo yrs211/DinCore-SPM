@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Objective_LevelDB
+import ObjectiveLevelDB
 
 public class DinDataManager: NSObject {
 

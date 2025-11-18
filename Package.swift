@@ -12,7 +12,7 @@ let package = Package(
         
     ],
     dependencies: [
-        .package(url: "https://github.com/yrs211/DinSupport-SPM.git", exact: "1.0.2"),
+        .package(url: "https://github.com/yrs211/DinSupport-SPM.git", exact: "1.0.7"),
         .package(url: "https://github.com/yrs211/AlicloudHttpDNS-SPM.git", exact:"1.0.1"),
         .package(url: "https://github.com/yrs211/Objective-LevelDB.git", exact:"1.0.4"),
         .package(url: "https://github.com/yrs211/Snappy-ObjC.git", exact:"1.0.1"),
@@ -40,6 +40,11 @@ let package = Package(
                      ],
             path: "DinCore/DinCore/Sources",//暴露文文件夹路径
             sources: ["."],
+            swiftSettings: [
+                          .define("ENABLE_DINCORE_LIVESTREAMING"), // Swift 代码的宏定义
+                          .define("ENABLE_DINCORE_PANEL"), // Swift 代码的宏定义
+                          .define("ENABLE_DINCORE_STORAGE_BATTERY") // Swift 代码的宏定义
+                      ],
         ),
     ]
 )

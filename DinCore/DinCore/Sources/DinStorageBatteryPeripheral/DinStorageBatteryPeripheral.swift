@@ -10,6 +10,7 @@ import HandyJSON
 import CoreBluetooth
 import DinSupport
 import OSLog
+import UIKit
 
 public protocol DinStorageBatteryPeripheralDelegate: AnyObject {
     func dinStorageBatteryPeripheral(

@@ -7,7 +7,7 @@
 
 import Foundation
 import HandyJSON
-import Qiniu
+import QiniuSDK
 
 extension DinCore {
     /// 登录

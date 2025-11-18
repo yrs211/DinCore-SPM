@@ -7,6 +7,7 @@
 
 import Foundation
 import DinSupport
+import DinSupportObjC
 
 public extension DinAccessory {
     /// 通过pluginID或者decodeID判断是不是Keypad

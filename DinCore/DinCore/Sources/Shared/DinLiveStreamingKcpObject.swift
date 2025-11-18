@@ -7,7 +7,7 @@
 
 import UIKit
 import DinSupport
-
+import DinSupportObjC
 class DinLiveStreamingKcpObject: NSObject {
 
     let convString: String

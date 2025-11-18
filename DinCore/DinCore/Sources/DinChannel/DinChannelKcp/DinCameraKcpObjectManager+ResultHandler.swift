@@ -7,6 +7,7 @@
 
 import Foundation
 import DinSupport
+import DinSupportObjC
 
 extension DinChannelKcpObjectManager: KCPObjectDelegate {
     public func kcp(_ kcp: KCPObject, didReceivedData data: Data) {

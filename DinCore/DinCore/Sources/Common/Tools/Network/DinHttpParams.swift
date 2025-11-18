@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Snappy
+import SnappyObjC
 import DinSupport
 
 public class DinHttpParams: NSObject {

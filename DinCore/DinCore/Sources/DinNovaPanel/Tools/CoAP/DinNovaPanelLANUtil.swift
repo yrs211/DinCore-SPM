@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import DinCore.ICoAPExchange
+import DinSupportObjC
 import DinSupport
 
 public class DinNovaPanelLANUtil: NSObject {

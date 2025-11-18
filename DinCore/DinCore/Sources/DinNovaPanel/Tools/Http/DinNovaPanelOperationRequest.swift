@@ -8,7 +8,7 @@
 import UIKit
 import Moya
 import DinSupport
-
+import DinSupportObjC
 public enum DinNovaPanelCommand: String {
     case arm = "TASK_ARM"
     case disarm = "TASK_DISARM"

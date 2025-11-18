@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/yrs211/DinSupport-SPM.git",
       "state" : {
-        "revision" : "5b4d61b0c1d9fcd11b4127c22845b89556ea9ca4",
-        "version" : "1.0.2"
+        "revision" : "24ca29871b54f8bd3577a8a510001f45c7dbe69f",
+        "version" : "1.0.7"
       }
     },
     {

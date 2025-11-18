@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxRelay
 import DinSupport
-
+import DinSupportObjC
 public class DinNovaPanelControl: NSObject {
     /// 主机
     let panel: DinNovaPanel

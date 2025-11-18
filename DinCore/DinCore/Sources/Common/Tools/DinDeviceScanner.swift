@@ -7,7 +7,7 @@
 
 import UIKit
 import DinSupport
-
+import DinSupportObjC
 public enum QRCodeType: String {
     case familyInvitationCode = "familyInvitationCode"
     case newPluginCode = "newPluginCode"

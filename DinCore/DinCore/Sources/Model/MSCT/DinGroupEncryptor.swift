@@ -69,21 +69,21 @@ class DinGroupEncryptor: NSObject, DinCommunicationEncryptor {
 extension DinGroupEncryptor {
     /// 加密
     private func encryptData(with requestData: Data) -> Data? {
-        return groupCryptor?.aesEncrypt(bytes: requestData.bytes)?.data
+        return groupCryptor?.aesEncrypt(bytes: requestData.dataBytes)?.data
     }
     /// 解密
     private func decryptData(_ responseData: Data, withMSCTHeaders msctHeaders: [UInt8 : OptionHeader]?) -> Data? {
-        if let ivBytes = msctHeaders?[DinMSCTOptionID.aesIV]?.data?.bytes {
+        if let ivBytes = msctHeaders?[DinMSCTOptionID.aesIV]?.data?.dataBytes {
             // 如果是msct通知的话，需要用commSecret来解密
             if let optionHeader = msctHeaders?[DinMSCTOptionID.method],
                let data = optionHeader.data,
                String(data: data, encoding: .utf8) == "notice" {
                 let commCryptor = DinsaferAESCBCCryptor(withSecret: self.commSecretBytes, iv: ivBytes)
-                return commCryptor?.aesDecrypt(bytes: responseData.bytes)?.data
+                return commCryptor?.aesDecrypt(bytes: responseData.dataBytes)?.data
             } else {
                 // 如果不是，用groupSecre
                 let tempGroupCryptor = DinsaferAESCBCCryptor(withSecret: self.groupSecretBytes, iv: ivBytes)
-                return tempGroupCryptor?.aesDecrypt(bytes: responseData.bytes)?.data
+                return tempGroupCryptor?.aesDecrypt(bytes: responseData.dataBytes)?.data
             }
         }
         return nil
