@@ -12,7 +12,7 @@ let package = Package(
         
     ],
     dependencies: [
-        .package(url: "https://github.com/yrs211/DinSupport-SPM.git", exact: "1.0.7"),
+        .package(url: "https://github.com/yrs211/DinSupport-SPM.git", exact: "1.0.8"),
         .package(url: "https://github.com/yrs211/AlicloudHttpDNS-SPM.git", exact:"1.0.1"),
         .package(url: "https://github.com/yrs211/Objective-LevelDB.git", exact:"1.0.4"),
         .package(url: "https://github.com/yrs211/Snappy-ObjC.git", exact:"1.0.1"),
