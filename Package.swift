@@ -43,7 +43,9 @@ let package = Package(
             swiftSettings: [
                           .define("ENABLE_DINCORE_LIVESTREAMING"), // Swift 代码的宏定义
                           .define("ENABLE_DINCORE_PANEL"), // Swift 代码的宏定义
-                          .define("ENABLE_DINCORE_STORAGE_BATTERY") // Swift 代码的宏定义
+                          .define("ENABLE_DINCORE_STORAGE_BATTERY"), // Swift 代码的宏定义
+                          .define("ENABLE_LOG")
+                          
                       ],
         ),
     ]
